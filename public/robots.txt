@@ -1,0 +1,19 @@
+# robots.txt pour IRCI - Prestataire Événementiel
+
+User-agent: *
+Allow: /
+
+# Autoriser les assets
+Allow: /build/
+Allow: /favicon.ico
+
+# Bloquer les fichiers sensibles
+Disallow: /var/
+Disallow: /vendor/
+Disallow: /config/
+
+# Sitemap
+Sitemap: https://www.irci.fr/sitemap.xml
+
+# Crawl-delay (optionnel)
+Crawl-delay: 0

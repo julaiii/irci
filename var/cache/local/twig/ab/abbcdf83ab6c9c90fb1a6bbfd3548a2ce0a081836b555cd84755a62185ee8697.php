@@ -1,0 +1,1214 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* about/index.html.twig */
+class __TwigTemplate_c0a070f739a4501d8ace5f55c7408fec11976a60e691d525a3eae98eb9ef21d1 extends Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'meta_description' => [$this, 'block_meta_description'],
+            'body' => [$this, 'block_body'],
+        ];
+    }
+
+    protected function doGetParent(array $context)
+    {
+        // line 1
+        return "base.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "about/index.html.twig"));
+
+        $this->parent = $this->loadTemplate("base.html.twig", "about/index.html.twig", 1);
+        yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+    }
+
+    // line 3
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["page_title"]) || array_key_exists("page_title", $context) ? $context["page_title"] : (function () { throw new RuntimeError('Variable "page_title" does not exist.', 3, $this->source); })()), "html", null, true);
+        yield " - IRCI";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        return; yield '';
+    }
+
+    // line 5
+    public function block_meta_description($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "meta_description"));
+
+        yield "Découvrez IRCI : notre équipe d'experts, nos valeurs et notre expérience dans l'événementiel professionnel.";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        return; yield '';
+    }
+
+    // line 7
+    public function block_body($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        // line 9
+        yield "<section class=\"bg-primary-blue text-white py-5 position-relative\">
+    <div class=\"container py-5\">
+        <div class=\"row align-items-center\">
+            <div class=\"col-lg-8 mx-auto text-center fade-in-up\">
+                <h1 class=\"display-4 font-bold mb-3\">À Propos d'IRCI</h1>
+                <p class=\"lead\">Votre partenaire évènementiel depuis 25 ans</p>
+            </div>
+        </div>
+    </div>
+    
+    ";
+        // line 20
+        yield "    <div class=\"scroll-indicator\">
+        <a href=\"#adn\" class=\"scroll-arrow\">
+            <i class=\"fas fa-chevron-down\"></i>
+        </a>
+    </div>
+</section>
+
+";
+        // line 28
+        yield "<section id=\"adn\" class=\"py-5 bg-white\">
+    <div class=\"container py-4\">
+        <div class=\"row\">
+            <div class=\"col-lg-10 mx-auto\">
+                <div class=\"mb-5 scroll-reveal\">
+                    <h2 class=\"h3 font-bold text-primary-dark mb-4\">
+                        <i class=\"fas fa-heart text-primary-red me-2\"></i>
+                        Une entreprise familiale au service de vos événements
+                    </h2>
+                    <p class=\"lead text-dark-gray mb-4\">
+                        <strong>IRCI</strong> est une entreprise familiale spécialisée dans les prestations événementielles professionnelles.
+                    </p>
+                    <p class=\"text-dark-gray fs-5\">
+                        Avec plus de 25 ans d'expériences dans l'évènementiel professionnel, notre équipe accompagne 
+                        des organisateurs dans des projets variés : <strong>salons, congrès, assemblées générales, manifestations sportives</strong>, etc.
+                    </p>
+                    
+                    ";
+        // line 46
+        yield "                    <div class=\"alert alert-primary-red-soft border-0 mt-4 p-4\">
+                        <div class=\"row align-items-center\">
+                            <div class=\"col-md-2 text-center mb-3 mb-md-0\">
+                                <i class=\"fas fa-trophy fa-4x text-primary-red\"></i>
+                            </div>
+                            <div class=\"col-md-10\">
+                                <h3 class=\"h4 font-bold text-primary-dark mb-3\">
+                                    Notre force : 4 métiers, 1 seul interlocuteur
+                                </h3>
+                                <p class=\"text-dark-gray mb-2\">
+                                    <strong class=\"text-primary-red\">Notre force : changer enregistrement par contrôle d'accès</strong>
+                                </p>
+                                <p class=\"text-dark-gray mb-0 small\">
+                                    Un interlocuteur unique pour 4 corps de métiers : équipement de salles de conférences (son, vidéo, lumière), multimédia, contrôle d'accès, régie technique. Cette polyvalence nous permet de coordonner l'ensemble de vos besoins techniques avec une vision globale et une cohérence parfaite, vous simplifiant ainsi la gestion de votre évènement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"row g-4 mb-5\">
+                    <div class=\"col-12 scroll-reveal\">
+                        <h3 class=\"h4 font-bold text-primary-dark mb-4 text-center\">
+                            Nos valeurs
+                        </h3>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Une relation humaine et directe</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Nous privilégions les échanges directs et transparents avec nos clients.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\" style=\"animation-delay: 0.1s;\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Un accompagnement individualisé</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Chaque projet est unique et mérite une attention personnalisée.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\" style=\"animation-delay: 0.2s;\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Une grande réactivité</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Nous répondons rapidement à vos besoins et nous adaptons en temps réel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\" style=\"animation-delay: 0.3s;\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Une adaptation à chaque besoin client</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Nous définissons votre besoin et nous adaptons à vos contraintes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\" style=\"animation-delay: 0.4s;\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Une expertise terrain solide</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Des années d'expérience sur le terrain garantissent notre savoir-faire.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\" style=\"animation-delay: 0.5s;\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Une approche sur-mesure</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Loin des offres standardisées, chaque solution est pensée pour vous.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"alert alert-primary-red-soft border-0 text-center p-4 scroll-reveal\">
+                    <i class=\"fas fa-star text-primary-red fa-2x mb-3\"></i>
+                    <p class=\"fs-5 font-bold text-primary-dark mb-2\">
+                        Chaque événement est pensé comme un projet unique
+                    </p>
+                    <p class=\"text-dark-gray mb-0\">
+                        Porté par l'expérience et la passion du métier
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+";
+        // line 155
+        yield "<section class=\"py-5 bg-light-bg\">
+    <div class=\"container py-4\">
+        <div class=\"text-center mb-5 scroll-reveal\">
+            <h2 class=\"display-6 font-bold text-primary-blue mb-3\">Nos Valeurs</h2>
+            <p class=\"lead text-dark-gray\">Les principes qui guident notre action au quotidien</p>
+        </div>
+        
+        <div class=\"row g-4\">
+            <div class=\"col-md-6 col-lg-3 scroll-reveal-card\">
+                <div class=\"card h-100 border-0 shadow-sm text-center p-4\">
+                    <div class=\"mb-3\">
+                        <i class=\"fas fa-check-circle fa-3x text-accent-gold\"></i>
+                    </div>
+                    <h3 class=\"h5 font-bold text-primary-blue mb-3\">Professionnalisme</h3>
+                    <p class=\"text-dark-gray mb-0\">
+                        Rigueur et excellence dans chaque intervention, respect des délais et des engagements.
+                    </p>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 scroll-reveal-card\" style=\"animation-delay: 0.1s;\">
+                <div class=\"card h-100 border-0 shadow-sm text-center p-4\">
+                    <div class=\"mb-3\">
+                        <i class=\"fas fa-handshake fa-3x text-accent-orange\"></i>
+                    </div>
+                    <h3 class=\"h5 font-bold text-primary-blue mb-3\">Sur-Mesure</h3>
+                    <p class=\"text-dark-gray mb-0\">
+                        Solutions personnalisées adaptées à vos besoins spécifiques et à votre budget.
+                    </p>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 scroll-reveal-card\" style=\"animation-delay: 0.2s;\">
+                <div class=\"card h-100 border-0 shadow-sm text-center p-4\">
+                    <div class=\"mb-3\">
+                        <i class=\"fas fa-award fa-3x text-primary-blue\"></i>
+                    </div>
+                    <h3 class=\"h5 font-bold text-primary-blue mb-3\">Expérience</h3>
+                    <p class=\"text-dark-gray mb-0\">
+                        Années d'expertise et centaines d'événements réussis dans tous les secteurs.
+                    </p>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 scroll-reveal-card\" style=\"animation-delay: 0.3s;\">
+                <div class=\"card h-100 border-0 shadow-sm text-center p-4\">
+                    <div class=\"mb-3\">
+                        <i class=\"fas fa-heart fa-3x text-accent-gold\"></i>
+                    </div>
+                    <h3 class=\"h5 font-bold text-primary-blue mb-3\">Passion</h3>
+                    <p class=\"text-dark-gray mb-0\">
+                        Amour du métier et engagement total pour la réussite de vos événements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+";
+        // line 215
+        yield "<section class=\"py-5 bg-white\">
+    <div class=\"container py-4\">
+        <div class=\"text-center mb-5 scroll-reveal\">
+            <h2 class=\"display-6 font-bold text-primary-dark mb-3\">Une équipe familiale, experte et disponible</h2>
+            <p class=\"lead text-dark-gray\">Rencontrez les personnes derrière chaque projet</p>
+        </div>
+
+        ";
+        // line 223
+        yield "        <div class=\"row mb-5\">
+            <div class=\"col-lg-10 mx-auto text-center scroll-reveal\">
+                <p class=\"fs-5 text-dark-gray mb-4\">
+                    Depuis plusieurs années dans le secteur, <strong>notre équipe familiale (père et trois fils)</strong> 
+                    met son expertise à votre service. Nous privilégions une approche humaine, une relation directe 
+                    et un accompagnement personnalisé du premier brief jusqu'à la clôture de votre événement.
+                </p>
+                <p class=\"text-dark-gray\">
+                    Chaque membre apporte sa spécialité et sa passion du métier pour garantir la réussite de vos projets événementiels.
+                </p>
+                <p class=\"text-dark-gray mt-3\">
+                    <strong>Derrière ce trio, un réseau d'experts de l'évènementiel accompagne IRCI à travers le territoire.</strong>
+                </p>
+            </div>
+        </div>
+        
+        ";
+        // line 240
+        yield "        <div class=\"row g-4 justify-content-center\">
+            ";
+        // line 242
+        yield "            <div class=\"col-md-6 col-lg-4 scroll-reveal-card\">
+                <div class=\"card h-100 border-0 shadow-sm team-card\">
+                    <div class=\"card-body text-center p-4\">
+                        <div class=\"mb-4\">
+                            <img src=\"";
+        // line 246
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/equipe/membre1.jpg"), "html", null, true);
+        yield "\" 
+                                 alt=\"Jean-Yves - Fondateur IRCI\" 
+                                 class=\"rounded-circle shadow team-photo\"
+                                 style=\"width: 180px; height: 180px; object-fit: cover; border: 4px solid var(--primary-red);\">
+                            <div class=\"rounded-circle bg-primary-dark d-none align-items-center justify-content-center mx-auto\" 
+                                 style=\"width: 180px; height: 180px; border: 4px solid var(--primary-red);\">
+                                <i class=\"fas fa-user fa-4x text-white\"></i>
+                            </div>
+                        </div>
+                        <h3 class=\"h4 font-bold text-primary-dark mb-2\">Jean-Yves</h3>
+                        <p class=\"text-primary-red font-bold mb-3 fs-5\">Fondateur</p>
+                        <div class=\"bg-light p-3 rounded mb-3\">
+                            <p class=\"text-dark-gray mb-2\">
+                                <strong>Expertise :</strong> Informatique & Multimédia
+                            </p>
+                            <p class=\"text-dark-gray small mb-0\">
+                                En 25 ans il a grandi avec le milieu et a su apporter des idées novatrices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            ";
+        // line 270
+        yield "            <div class=\"col-md-6 col-lg-4 scroll-reveal-card\" style=\"animation-delay: 0.1s;\">
+                <div class=\"card h-100 border-0 shadow-sm team-card featured\">
+                    <div class=\"ribbon\">
+                        <span>Directeur</span>
+                    </div>
+                    <div class=\"card-body text-center p-4\">
+                        <div class=\"mb-4\">
+                            <img src=\"";
+        // line 277
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/equipe/membre2.jpg"), "html", null, true);
+        yield "\" 
+                                 alt=\"Pierre - Directeur des opérations IRCI\" 
+                                 class=\"rounded-circle shadow team-photo\"
+                                 style=\"width: 180px; height: 180px; object-fit: cover; border: 4px solid var(--primary-red);\">
+                            <div class=\"rounded-circle bg-primary-dark d-none align-items-center justify-content-center mx-auto\" 
+                                 style=\"width: 180px; height: 180px; border: 4px solid var(--primary-red);\">
+                                <i class=\"fas fa-user fa-4x text-white\"></i>
+                            </div>
+                        </div>
+                        <h3 class=\"h4 font-bold text-primary-dark mb-2\">Pierre</h3>
+                        <p class=\"text-primary-red font-bold mb-3 fs-5\">Directeur des opérations</p>
+                        <div class=\"bg-light p-3 rounded mb-3\">
+                            <p class=\"text-dark-gray mb-2\">
+                                <strong>Expertise :</strong> Technique & Accompagnement
+                            </p>
+                            <p class=\"text-dark-gray small mb-2\">
+                                En 10 ans il a touché à tout dans l'entreprise. Sa connaissance du matériel et du terrain est un plus pour votre projet.
+                            </p>
+                            <p class=\"mb-0\">
+                                <span class=\"badge bg-primary-red-soft text-primary-dark\">
+                                    <i class=\"fas fa-star me-1\"></i>Point fort : sa polyvalence
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            ";
+        // line 306
+        yield "            <div class=\"col-md-6 col-lg-4 scroll-reveal-card\" style=\"animation-delay: 0.2s;\">
+                <div class=\"card h-100 border-0 shadow-sm team-card\">
+                    <div class=\"card-body text-center p-4\">
+                        <div class=\"mb-4\">
+                            <img src=\"";
+        // line 310
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/equipe/membre3.jpg"), "html", null, true);
+        yield "\" 
+                                 alt=\"François - Responsable du développement IRCI\" 
+                                 class=\"rounded-circle shadow team-photo\"
+                                 style=\"width: 180px; height: 180px; object-fit: cover; border: 4px solid var(--primary-red);\">
+                            <div class=\"rounded-circle bg-primary-dark d-none align-items-center justify-content-center mx-auto\" 
+                                 style=\"width: 180px; height: 180px; border: 4px solid var(--primary-red);\">
+                                <i class=\"fas fa-user fa-4x text-white\"></i>
+                            </div>
+                        </div>
+                        <h3 class=\"h4 font-bold text-primary-dark mb-2\">François</h3>
+                        <p class=\"text-primary-red font-bold mb-3 fs-5\">Responsable du développement</p>
+                        <div class=\"bg-light p-3 rounded mb-3\">
+                            <p class=\"text-dark-gray mb-2\">
+                                <strong>Expertise :</strong> Sonorisation & Vidéo
+                            </p>
+                            <p class=\"text-dark-gray small mb-0\">
+                                Spécialiste des salles de conférences il maîtrise le son et la vidéo parfaitement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.team-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(220, 20, 60, 0.2) !important;
+}
+
+.team-card.featured {
+    border: 2px solid var(--primary-red);
+}
+
+.team-photo {
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .team-photo {
+    transform: scale(1.05);
+}
+
+.ribbon {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background: var(--primary-red);
+    color: white;
+    padding: 5px 40px;
+    transform: rotate(45deg);
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+</style>
+
+";
+        // line 376
+        yield "<section class=\"py-5 bg-light-bg\">
+    <div class=\"container py-4\">
+        <div class=\"row\">
+            <div class=\"col-lg-8 mx-auto\">
+                <h2 class=\"h3 font-bold text-primary-blue mb-4 text-center\">Notre Expertise</h2>
+                
+                <div class=\"row g-4 mt-3\">
+                    <div class=\"col-md-6\">
+                        <div class=\"d-flex align-items-start\">
+                            <div class=\"flex-shrink-0\">
+                                <i class=\"fas fa-check-circle fa-2x text-accent-gold me-3\"></i>
+                            </div>
+                            <div>
+                                <h3 class=\"h6 font-bold text-primary-blue mb-2\">Événements Professionnels</h3>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Séminaires, conventions, lancements de produits, conférences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=\"col-md-6\">
+                        <div class=\"d-flex align-items-start\">
+                            <div class=\"flex-shrink-0\">
+                                <i class=\"fas fa-check-circle fa-2x text-accent-gold me-3\"></i>
+                            </div>
+                            <div>
+                                <h3 class=\"h6 font-bold text-primary-blue mb-2\">Salons & Foires</h3>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Stands, animations, sonorisation de halls d'exposition.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=\"col-md-6\">
+                        <div class=\"d-flex align-items-start\">
+                            <div class=\"flex-shrink-0\">
+                                <i class=\"fas fa-check-circle fa-2x text-accent-gold me-3\"></i>
+                            </div>
+                            <div>
+                                <h3 class=\"h6 font-bold text-primary-blue mb-2\">Manifestations sportives</h3>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Sonorisation, lumière.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=\"col-md-6\">
+                        <div class=\"d-flex align-items-start\">
+                            <div class=\"flex-shrink-0\">
+                                <i class=\"fas fa-check-circle fa-2x text-accent-gold me-3\"></i>
+                            </div>
+                            <div>
+                                <h3 class=\"h6 font-bold text-primary-blue mb-2\">Accompagnement Sur-Mesure</h3>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Conseil, installation, assistance technique, maintenance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+";
+        // line 445
+        yield "<section class=\"py-5 bg-white\">
+    <div class=\"container py-5\">
+        <div class=\"text-center mb-5 scroll-reveal\">
+            <h2 class=\"display-6 font-bold text-primary-dark mb-3\">Témoignages</h2>
+            <p class=\"lead text-dark-gray\">Témoignages à venir</p>
+        </div>
+    </div>
+</section>
+
+<style>
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(220, 20, 60, 0.1);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(220, 20, 60, 0.15);
+    border-color: rgba(220, 20, 60, 0.3);
+}
+
+.quote-icon {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: var(--primary-red);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(220, 20, 60, 0.3);
+}
+
+.testimonial-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--dark-gray);
+    font-style: italic;
+    margin: 30px 0 25px 0;
+    min-height: 120px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(220, 20, 60, 0.1);
+}
+
+.author-photo {
+    flex-shrink: 0;
+}
+
+.author-info {
+    flex-grow: 1;
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 0 0 5px 0;
+}
+
+.author-position {
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin: 0;
+}
+</style>
+
+";
+        // line 527
+        yield "<section class=\"py-5 bg-accent-orange text-white\">
+    <div class=\"container py-4 text-center\">
+        <h2 class=\"h3 font-bold mb-3\">Prêt à travailler avec nous ?</h2>
+        <p class=\"lead mb-4\">Discutons de votre projet événementiel</p>
+        <a href=\"";
+        // line 531
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
+        yield "\" class=\"btn btn-primary-custom btn-lg\">
+            <i class=\"fas fa-envelope me-2\"></i>Nous contacter
+        </a>
+    </div>
+</section>
+";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        return; yield '';
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName()
+    {
+        return "about/index.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo()
+    {
+        return array (  637 => 531,  631 => 527,  548 => 445,  478 => 376,  410 => 310,  404 => 306,  373 => 277,  364 => 270,  338 => 246,  332 => 242,  329 => 240,  311 => 223,  302 => 215,  241 => 155,  131 => 46,  112 => 28,  103 => 20,  91 => 9,  84 => 7,  70 => 5,  55 => 3,  38 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("{% extends 'base.html.twig' %}
+
+{% block title %}{{ page_title }} - IRCI{% endblock %}
+
+{% block meta_description %}Découvrez IRCI : notre équipe d'experts, nos valeurs et notre expérience dans l'événementiel professionnel.{% endblock %}
+
+{% block body %}
+{# Hero Section #}
+<section class=\"bg-primary-blue text-white py-5 position-relative\">
+    <div class=\"container py-5\">
+        <div class=\"row align-items-center\">
+            <div class=\"col-lg-8 mx-auto text-center fade-in-up\">
+                <h1 class=\"display-4 font-bold mb-3\">À Propos d'IRCI</h1>
+                <p class=\"lead\">Votre partenaire évènementiel depuis 25 ans</p>
+            </div>
+        </div>
+    </div>
+    
+    {# Flèche animée #}
+    <div class=\"scroll-indicator\">
+        <a href=\"#adn\" class=\"scroll-arrow\">
+            <i class=\"fas fa-chevron-down\"></i>
+        </a>
+    </div>
+</section>
+
+{# ADN de l'entreprise #}
+<section id=\"adn\" class=\"py-5 bg-white\">
+    <div class=\"container py-4\">
+        <div class=\"row\">
+            <div class=\"col-lg-10 mx-auto\">
+                <div class=\"mb-5 scroll-reveal\">
+                    <h2 class=\"h3 font-bold text-primary-dark mb-4\">
+                        <i class=\"fas fa-heart text-primary-red me-2\"></i>
+                        Une entreprise familiale au service de vos événements
+                    </h2>
+                    <p class=\"lead text-dark-gray mb-4\">
+                        <strong>IRCI</strong> est une entreprise familiale spécialisée dans les prestations événementielles professionnelles.
+                    </p>
+                    <p class=\"text-dark-gray fs-5\">
+                        Avec plus de 25 ans d'expériences dans l'évènementiel professionnel, notre équipe accompagne 
+                        des organisateurs dans des projets variés : <strong>salons, congrès, assemblées générales, manifestations sportives</strong>, etc.
+                    </p>
+                    
+                    {# Encadré différenciation #}
+                    <div class=\"alert alert-primary-red-soft border-0 mt-4 p-4\">
+                        <div class=\"row align-items-center\">
+                            <div class=\"col-md-2 text-center mb-3 mb-md-0\">
+                                <i class=\"fas fa-trophy fa-4x text-primary-red\"></i>
+                            </div>
+                            <div class=\"col-md-10\">
+                                <h3 class=\"h4 font-bold text-primary-dark mb-3\">
+                                    Notre force : 4 métiers, 1 seul interlocuteur
+                                </h3>
+                                <p class=\"text-dark-gray mb-2\">
+                                    <strong class=\"text-primary-red\">Notre force : changer enregistrement par contrôle d'accès</strong>
+                                </p>
+                                <p class=\"text-dark-gray mb-0 small\">
+                                    Un interlocuteur unique pour 4 corps de métiers : équipement de salles de conférences (son, vidéo, lumière), multimédia, contrôle d'accès, régie technique. Cette polyvalence nous permet de coordonner l'ensemble de vos besoins techniques avec une vision globale et une cohérence parfaite, vous simplifiant ainsi la gestion de votre évènement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"row g-4 mb-5\">
+                    <div class=\"col-12 scroll-reveal\">
+                        <h3 class=\"h4 font-bold text-primary-dark mb-4 text-center\">
+                            Nos valeurs
+                        </h3>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Une relation humaine et directe</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Nous privilégions les échanges directs et transparents avec nos clients.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\" style=\"animation-delay: 0.1s;\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Un accompagnement individualisé</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Chaque projet est unique et mérite une attention personnalisée.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\" style=\"animation-delay: 0.2s;\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Une grande réactivité</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Nous répondons rapidement à vos besoins et nous adaptons en temps réel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\" style=\"animation-delay: 0.3s;\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Une adaptation à chaque besoin client</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Nous définissons votre besoin et nous adaptons à vos contraintes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\" style=\"animation-delay: 0.4s;\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Une expertise terrain solide</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Des années d'expérience sur le terrain garantissent notre savoir-faire.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-md-6 scroll-reveal-card\" style=\"animation-delay: 0.5s;\">
+                        <div class=\"d-flex align-items-start p-3 bg-light rounded\">
+                            <i class=\"fas fa-check-circle fa-2x text-primary-red me-3 mt-1\"></i>
+                            <div>
+                                <h4 class=\"h6 font-bold text-primary-dark mb-2\">Une approche sur-mesure</h4>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Loin des offres standardisées, chaque solution est pensée pour vous.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"alert alert-primary-red-soft border-0 text-center p-4 scroll-reveal\">
+                    <i class=\"fas fa-star text-primary-red fa-2x mb-3\"></i>
+                    <p class=\"fs-5 font-bold text-primary-dark mb-2\">
+                        Chaque événement est pensé comme un projet unique
+                    </p>
+                    <p class=\"text-dark-gray mb-0\">
+                        Porté par l'expérience et la passion du métier
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Nos Valeurs #}
+<section class=\"py-5 bg-light-bg\">
+    <div class=\"container py-4\">
+        <div class=\"text-center mb-5 scroll-reveal\">
+            <h2 class=\"display-6 font-bold text-primary-blue mb-3\">Nos Valeurs</h2>
+            <p class=\"lead text-dark-gray\">Les principes qui guident notre action au quotidien</p>
+        </div>
+        
+        <div class=\"row g-4\">
+            <div class=\"col-md-6 col-lg-3 scroll-reveal-card\">
+                <div class=\"card h-100 border-0 shadow-sm text-center p-4\">
+                    <div class=\"mb-3\">
+                        <i class=\"fas fa-check-circle fa-3x text-accent-gold\"></i>
+                    </div>
+                    <h3 class=\"h5 font-bold text-primary-blue mb-3\">Professionnalisme</h3>
+                    <p class=\"text-dark-gray mb-0\">
+                        Rigueur et excellence dans chaque intervention, respect des délais et des engagements.
+                    </p>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 scroll-reveal-card\" style=\"animation-delay: 0.1s;\">
+                <div class=\"card h-100 border-0 shadow-sm text-center p-4\">
+                    <div class=\"mb-3\">
+                        <i class=\"fas fa-handshake fa-3x text-accent-orange\"></i>
+                    </div>
+                    <h3 class=\"h5 font-bold text-primary-blue mb-3\">Sur-Mesure</h3>
+                    <p class=\"text-dark-gray mb-0\">
+                        Solutions personnalisées adaptées à vos besoins spécifiques et à votre budget.
+                    </p>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 scroll-reveal-card\" style=\"animation-delay: 0.2s;\">
+                <div class=\"card h-100 border-0 shadow-sm text-center p-4\">
+                    <div class=\"mb-3\">
+                        <i class=\"fas fa-award fa-3x text-primary-blue\"></i>
+                    </div>
+                    <h3 class=\"h5 font-bold text-primary-blue mb-3\">Expérience</h3>
+                    <p class=\"text-dark-gray mb-0\">
+                        Années d'expertise et centaines d'événements réussis dans tous les secteurs.
+                    </p>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 scroll-reveal-card\" style=\"animation-delay: 0.3s;\">
+                <div class=\"card h-100 border-0 shadow-sm text-center p-4\">
+                    <div class=\"mb-3\">
+                        <i class=\"fas fa-heart fa-3x text-accent-gold\"></i>
+                    </div>
+                    <h3 class=\"h5 font-bold text-primary-blue mb-3\">Passion</h3>
+                    <p class=\"text-dark-gray mb-0\">
+                        Amour du métier et engagement total pour la réussite de vos événements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Notre Équipe - Entreprise Familiale #}
+<section class=\"py-5 bg-white\">
+    <div class=\"container py-4\">
+        <div class=\"text-center mb-5 scroll-reveal\">
+            <h2 class=\"display-6 font-bold text-primary-dark mb-3\">Une équipe familiale, experte et disponible</h2>
+            <p class=\"lead text-dark-gray\">Rencontrez les personnes derrière chaque projet</p>
+        </div>
+
+        {# Présentation générale de l'équipe familiale #}
+        <div class=\"row mb-5\">
+            <div class=\"col-lg-10 mx-auto text-center scroll-reveal\">
+                <p class=\"fs-5 text-dark-gray mb-4\">
+                    Depuis plusieurs années dans le secteur, <strong>notre équipe familiale (père et trois fils)</strong> 
+                    met son expertise à votre service. Nous privilégions une approche humaine, une relation directe 
+                    et un accompagnement personnalisé du premier brief jusqu'à la clôture de votre événement.
+                </p>
+                <p class=\"text-dark-gray\">
+                    Chaque membre apporte sa spécialité et sa passion du métier pour garantir la réussite de vos projets événementiels.
+                </p>
+                <p class=\"text-dark-gray mt-3\">
+                    <strong>Derrière ce trio, un réseau d'experts de l'évènementiel accompagne IRCI à travers le territoire.</strong>
+                </p>
+            </div>
+        </div>
+        
+        {# Membres de l'équipe #}
+        <div class=\"row g-4 justify-content-center\">
+            {# Membre 1 - Jean-Yves (Fondateur) #}
+            <div class=\"col-md-6 col-lg-4 scroll-reveal-card\">
+                <div class=\"card h-100 border-0 shadow-sm team-card\">
+                    <div class=\"card-body text-center p-4\">
+                        <div class=\"mb-4\">
+                            <img src=\"{{ asset('images/equipe/membre1.jpg') }}\" 
+                                 alt=\"Jean-Yves - Fondateur IRCI\" 
+                                 class=\"rounded-circle shadow team-photo\"
+                                 style=\"width: 180px; height: 180px; object-fit: cover; border: 4px solid var(--primary-red);\">
+                            <div class=\"rounded-circle bg-primary-dark d-none align-items-center justify-content-center mx-auto\" 
+                                 style=\"width: 180px; height: 180px; border: 4px solid var(--primary-red);\">
+                                <i class=\"fas fa-user fa-4x text-white\"></i>
+                            </div>
+                        </div>
+                        <h3 class=\"h4 font-bold text-primary-dark mb-2\">Jean-Yves</h3>
+                        <p class=\"text-primary-red font-bold mb-3 fs-5\">Fondateur</p>
+                        <div class=\"bg-light p-3 rounded mb-3\">
+                            <p class=\"text-dark-gray mb-2\">
+                                <strong>Expertise :</strong> Informatique & Multimédia
+                            </p>
+                            <p class=\"text-dark-gray small mb-0\">
+                                En 25 ans il a grandi avec le milieu et a su apporter des idées novatrices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {# Membre 2 - Pierre (Directeur des opérations) #}
+            <div class=\"col-md-6 col-lg-4 scroll-reveal-card\" style=\"animation-delay: 0.1s;\">
+                <div class=\"card h-100 border-0 shadow-sm team-card featured\">
+                    <div class=\"ribbon\">
+                        <span>Directeur</span>
+                    </div>
+                    <div class=\"card-body text-center p-4\">
+                        <div class=\"mb-4\">
+                            <img src=\"{{ asset('images/equipe/membre2.jpg') }}\" 
+                                 alt=\"Pierre - Directeur des opérations IRCI\" 
+                                 class=\"rounded-circle shadow team-photo\"
+                                 style=\"width: 180px; height: 180px; object-fit: cover; border: 4px solid var(--primary-red);\">
+                            <div class=\"rounded-circle bg-primary-dark d-none align-items-center justify-content-center mx-auto\" 
+                                 style=\"width: 180px; height: 180px; border: 4px solid var(--primary-red);\">
+                                <i class=\"fas fa-user fa-4x text-white\"></i>
+                            </div>
+                        </div>
+                        <h3 class=\"h4 font-bold text-primary-dark mb-2\">Pierre</h3>
+                        <p class=\"text-primary-red font-bold mb-3 fs-5\">Directeur des opérations</p>
+                        <div class=\"bg-light p-3 rounded mb-3\">
+                            <p class=\"text-dark-gray mb-2\">
+                                <strong>Expertise :</strong> Technique & Accompagnement
+                            </p>
+                            <p class=\"text-dark-gray small mb-2\">
+                                En 10 ans il a touché à tout dans l'entreprise. Sa connaissance du matériel et du terrain est un plus pour votre projet.
+                            </p>
+                            <p class=\"mb-0\">
+                                <span class=\"badge bg-primary-red-soft text-primary-dark\">
+                                    <i class=\"fas fa-star me-1\"></i>Point fort : sa polyvalence
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {# Membre 3 - François (Responsable du développement) #}
+            <div class=\"col-md-6 col-lg-4 scroll-reveal-card\" style=\"animation-delay: 0.2s;\">
+                <div class=\"card h-100 border-0 shadow-sm team-card\">
+                    <div class=\"card-body text-center p-4\">
+                        <div class=\"mb-4\">
+                            <img src=\"{{ asset('images/equipe/membre3.jpg') }}\" 
+                                 alt=\"François - Responsable du développement IRCI\" 
+                                 class=\"rounded-circle shadow team-photo\"
+                                 style=\"width: 180px; height: 180px; object-fit: cover; border: 4px solid var(--primary-red);\">
+                            <div class=\"rounded-circle bg-primary-dark d-none align-items-center justify-content-center mx-auto\" 
+                                 style=\"width: 180px; height: 180px; border: 4px solid var(--primary-red);\">
+                                <i class=\"fas fa-user fa-4x text-white\"></i>
+                            </div>
+                        </div>
+                        <h3 class=\"h4 font-bold text-primary-dark mb-2\">François</h3>
+                        <p class=\"text-primary-red font-bold mb-3 fs-5\">Responsable du développement</p>
+                        <div class=\"bg-light p-3 rounded mb-3\">
+                            <p class=\"text-dark-gray mb-2\">
+                                <strong>Expertise :</strong> Sonorisation & Vidéo
+                            </p>
+                            <p class=\"text-dark-gray small mb-0\">
+                                Spécialiste des salles de conférences il maîtrise le son et la vidéo parfaitement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.team-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(220, 20, 60, 0.2) !important;
+}
+
+.team-card.featured {
+    border: 2px solid var(--primary-red);
+}
+
+.team-photo {
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .team-photo {
+    transform: scale(1.05);
+}
+
+.ribbon {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background: var(--primary-red);
+    color: white;
+    padding: 5px 40px;
+    transform: rotate(45deg);
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+</style>
+
+{# Notre Expertise #}
+<section class=\"py-5 bg-light-bg\">
+    <div class=\"container py-4\">
+        <div class=\"row\">
+            <div class=\"col-lg-8 mx-auto\">
+                <h2 class=\"h3 font-bold text-primary-blue mb-4 text-center\">Notre Expertise</h2>
+                
+                <div class=\"row g-4 mt-3\">
+                    <div class=\"col-md-6\">
+                        <div class=\"d-flex align-items-start\">
+                            <div class=\"flex-shrink-0\">
+                                <i class=\"fas fa-check-circle fa-2x text-accent-gold me-3\"></i>
+                            </div>
+                            <div>
+                                <h3 class=\"h6 font-bold text-primary-blue mb-2\">Événements Professionnels</h3>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Séminaires, conventions, lancements de produits, conférences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=\"col-md-6\">
+                        <div class=\"d-flex align-items-start\">
+                            <div class=\"flex-shrink-0\">
+                                <i class=\"fas fa-check-circle fa-2x text-accent-gold me-3\"></i>
+                            </div>
+                            <div>
+                                <h3 class=\"h6 font-bold text-primary-blue mb-2\">Salons & Foires</h3>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Stands, animations, sonorisation de halls d'exposition.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=\"col-md-6\">
+                        <div class=\"d-flex align-items-start\">
+                            <div class=\"flex-shrink-0\">
+                                <i class=\"fas fa-check-circle fa-2x text-accent-gold me-3\"></i>
+                            </div>
+                            <div>
+                                <h3 class=\"h6 font-bold text-primary-blue mb-2\">Manifestations sportives</h3>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Sonorisation, lumière.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=\"col-md-6\">
+                        <div class=\"d-flex align-items-start\">
+                            <div class=\"flex-shrink-0\">
+                                <i class=\"fas fa-check-circle fa-2x text-accent-gold me-3\"></i>
+                            </div>
+                            <div>
+                                <h3 class=\"h6 font-bold text-primary-blue mb-2\">Accompagnement Sur-Mesure</h3>
+                                <p class=\"text-dark-gray small mb-0\">
+                                    Conseil, installation, assistance technique, maintenance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Témoignages Clients #}
+<section class=\"py-5 bg-white\">
+    <div class=\"container py-5\">
+        <div class=\"text-center mb-5 scroll-reveal\">
+            <h2 class=\"display-6 font-bold text-primary-dark mb-3\">Témoignages</h2>
+            <p class=\"lead text-dark-gray\">Témoignages à venir</p>
+        </div>
+    </div>
+</section>
+
+<style>
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(220, 20, 60, 0.1);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(220, 20, 60, 0.15);
+    border-color: rgba(220, 20, 60, 0.3);
+}
+
+.quote-icon {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: var(--primary-red);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(220, 20, 60, 0.3);
+}
+
+.testimonial-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--dark-gray);
+    font-style: italic;
+    margin: 30px 0 25px 0;
+    min-height: 120px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(220, 20, 60, 0.1);
+}
+
+.author-photo {
+    flex-shrink: 0;
+}
+
+.author-info {
+    flex-grow: 1;
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 0 0 5px 0;
+}
+
+.author-position {
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin: 0;
+}
+</style>
+
+{# CTA Section #}
+<section class=\"py-5 bg-accent-orange text-white\">
+    <div class=\"container py-4 text-center\">
+        <h2 class=\"h3 font-bold mb-3\">Prêt à travailler avec nous ?</h2>
+        <p class=\"lead mb-4\">Discutons de votre projet événementiel</p>
+        <a href=\"{{ path('contact') }}\" class=\"btn btn-primary-custom btn-lg\">
+            <i class=\"fas fa-envelope me-2\"></i>Nous contacter
+        </a>
+    </div>
+</section>
+{% endblock %}
+", "about/index.html.twig", "/home/vagrant/public_html/irci/templates/about/index.html.twig");
+    }
+}
