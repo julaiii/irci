@@ -1,0 +1,573 @@
+@import '../fontawesome/css/all.min.css';
+
+:root {
+  /* Couleurs thème IRCI - Palette Rouge Nuancée */
+  --primary-red: #DC143C;        /* Rouge principal (CTAs) */
+  --primary-red-light: #E57373;  /* Rouge adouci (accents) */
+  --primary-red-soft: #FFEBEE;   /* Rouge très léger (backgrounds) */
+  --primary-dark: #2C3E50;       /* Gris anthracite (headers) */
+  --accent-warm: #F5E6D3;        /* Beige chaud (adoucissement) */
+  --light-bg: #F8F9FA;           /* Blanc cassé */
+  --light-gray: #E0E0E0;         /* Gris clair */
+  --dark-gray: #424242;          /* Gris foncé (textes) */
+  --text-dark: #212529;          /* Noir textes */
+  --white: #FFFFFF;              /* Blanc pur */
+  
+  /* Variables additionnelles pour compatibilité */
+  --primary-blue: var(--primary-dark);  /* Alias pour primary-dark */
+  --accent-gold: var(--primary-red);     /* Alias pour rouge principal */
+  --accent-orange: var(--primary-red-light); /* Alias pour rouge adouci */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+}
+
+/* FONTS */
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.fs-25 {
+  font-size: 25px !important;
+}
+
+/* COLORS */
+
+.text-primary-red {
+  color: var(--primary-red) !important;
+}
+
+.text-primary-red-light {
+  color: var(--primary-red-light) !important;
+}
+
+.text-primary-dark {
+  color: var(--primary-dark) !important;
+}
+
+.text-dark-gray {
+  color: var(--dark-gray) !important;
+}
+
+.bg-primary-red {
+  background: var(--primary-red) !important;
+}
+
+.bg-primary-red-soft {
+  background: var(--primary-red-soft) !important;
+}
+
+.bg-primary-dark {
+  background: var(--primary-dark) !important;
+}
+
+.bg-accent-warm {
+  background: var(--accent-warm) !important;
+}
+
+.bg-light-bg {
+  background: var(--light-bg) !important;
+}
+
+/* Rétrocompatibilité */
+.text-primary-blue { color: var(--primary-dark) !important; }
+.text-accent-orange { color: var(--primary-red) !important; }
+.text-accent-gold { color: var(--primary-red-light) !important; }
+.bg-primary-blue { background: var(--primary-dark) !important; }
+.bg-accent-orange { background: var(--primary-red) !important; }
+.bg-accent-gold { background: var(--primary-red-light) !important; }
+
+/* BUTTONS */
+
+.btn-primary-custom {
+  background: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
+  color: var(--white) !important;
+  font-weight: 600;
+  padding: 12px 32px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.2);
+}
+
+.btn-primary-custom:hover {
+  background: var(--primary-red);
+  border-color: var(--primary-red);
+  box-shadow: 0 4px 12px rgba(220, 20, 60, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-accent {
+  background: var(--primary-red);
+  border: 2px solid var(--primary-red);
+  color: var(--white) !important;
+  font-weight: 600;
+  padding: 12px 32px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(220, 20, 60, 0.2);
+}
+
+.btn-accent:hover {
+  background: #B21030;
+  border-color: #B21030;
+  box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary-custom {
+  color: var(--primary-red);
+  border: 2px solid var(--primary-red);
+  background-color: transparent;
+  font-weight: 600;
+  padding: 12px 32px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary-custom:hover {
+  color: var(--white);
+  background-color: var(--primary-red);
+  box-shadow: 0 4px 12px rgba(220, 20, 60, 0.3);
+}
+
+/* SPACES */
+.mt-55 {
+  margin-top: 55px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+/* FORM */
+::-webkit-scrollbar {
+  width: 12px;
+  margin-right: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #828e8e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-red);
+  border-color: var(--primary-red);
+}
+
+.form-check-input:hover {
+  background-color: var(--primary-red-light);
+  border-color: var(--primary-red-light);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-red);
+  box-shadow: 0 0 0 0.2rem rgba(220, 20, 60, 0.15);
+}
+
+.form-label {
+  color: var(--primary-dark);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+  border: 2px solid var(--light-gray);
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.form-control:hover,
+.form-select:hover {
+  border-color: var(--primary-red-light);
+}
+
+/* NAVIGATION */
+
+.navbar {
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-bottom: 3px solid var(--primary-red);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--primary-dark) !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--primary-red) !important;
+}
+
+.navbar-brand i {
+  color: var(--primary-red);
+}
+
+.nav-link {
+  color: var(--dark-gray) !important;
+  font-weight: 500;
+  padding: 10px 20px !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background: var(--primary-red);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-red) !important;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* FOOTER */
+
+footer {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, #1a2332 100%);
+  color: var(--white);
+  padding: 50px 0 20px 0;
+  border-top: 4px solid var(--primary-red);
+}
+
+footer h5 {
+  color: var(--white);
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+footer h5::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-red);
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: var(--accent-warm);
+  padding-left: 5px;
+}
+
+footer .text-light-gray {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* TOASTS */
+.toast-container {
+  z-index: 1100;
+}
+
+.toast {
+  min-width: 300px;
+}
+
+/* LOGO IRCI avec points rouges sur les "I" */
+.irci-logo-text {
+  display: inline-block;
+  position: relative;
+}
+
+.irci-letter {
+  display: inline-block;
+}
+
+/* Premier "I" avec point rouge EN HAUT */
+.irci-i-top {
+  position: relative;
+  display: inline-block;
+}
+
+.irci-i-top::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-red);
+  border-radius: 50%;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 4px rgba(220, 20, 60, 0.3);
+}
+
+/* Dernier "I" avec point rouge EN BAS (inversé) */
+.irci-i-bottom {
+  position: relative;
+  display: inline-block;
+}
+
+.irci-i-bottom::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-red);
+  border-radius: 50%;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 4px rgba(220, 20, 60, 0.3);
+}
+
+/* Animation subtile pour les points */
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* LOGO IRCI pour le footer (version adaptée fond sombre) */
+.irci-logo-footer {
+  display: inline-block;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+/* Premier "I" avec point rouge EN HAUT - Footer */
+.irci-i-top-footer {
+  position: relative;
+  display: inline-block;
+}
+
+.irci-i-top-footer::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-red);
+  border-radius: 50%;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 6px rgba(220, 20, 60, 0.5);
+}
+
+/* Dernier "I" avec point rouge EN BAS - Footer */
+.irci-i-bottom-footer {
+  position: relative;
+  display: inline-block;
+}
+
+.irci-i-bottom-footer::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-red);
+  border-radius: 50%;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 6px rgba(220, 20, 60, 0.5);
+}
+
+/* ===================================================
+   ANIMATIONS SCROLL REVEAL
+   =================================================== */
+
+/* Flèche de scroll animée */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.scroll-arrow {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: bounce 2s infinite;
+}
+
+.scroll-arrow:hover {
+  background-color: var(--primary-red);
+  border-color: var(--primary-red);
+  color: white;
+  transform: translateY(-5px);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Animation de base - Fade in up */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll Reveal - apparition générale */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll Reveal - depuis la gauche */
+.scroll-reveal-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scroll Reveal - depuis la droite */
+.scroll-reveal-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scroll Reveal - Cartes (avec délai progressif) */
+.scroll-reveal-card {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-reveal-card.revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Smooth scroll pour toute la page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Effet d'échelle sur les images au hover */
+.scroll-reveal-left img,
+.scroll-reveal-right img {
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-reveal-left.revealed img:hover,
+.scroll-reveal-right.revealed img:hover {
+  transform: scale(1.05);
+}

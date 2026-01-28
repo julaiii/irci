@@ -1,0 +1,298 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ page_title }} - Location - IRCI{% endblock %}
+
+{% block meta_description %}{{ product.short_description }}{% endblock %}
+
+{% block body %}
+{# Breadcrumb #}
+<section class="bg-light-bg py-3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{{ path('home') }}">Accueil</a></li>
+                <li class="breadcrumb-item"><a href="{{ path('rental') }}">Location de matériel</a></li>
+                <li class="breadcrumb-item"><span class="text-primary-red">{{ product.category }}</span></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+{# Product Header #}
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="row g-5">
+            {# Image produit #}
+            <div class="col-lg-6 scroll-reveal-left">
+                <div class="product-detail-image">
+                    <img src="{{ asset(product.image) }}" 
+                         alt="{{ product.name }}" 
+                         class="img-fluid rounded shadow-lg"
+                         onerror="this.src='{{ asset('images/placeholder.jpg') }}'">
+                    <span class="product-detail-badge">{{ product.category }}</span>
+                </div>
+            </div>
+
+            {# Informations produit #}
+            <div class="col-lg-6 scroll-reveal-right">
+                <div class="product-detail-info">
+                    <h1 class="display-5 font-bold text-primary-dark mb-3">{{ product.name }}</h1>
+                    
+                    <div class="product-meta mb-4">
+                        <span class="meta-item">
+                            <i class="fas fa-tag text-primary-red me-2"></i>
+                            <strong>Catégorie :</strong> {{ product.category }}
+                        </span>
+                    </div>
+
+                    <div class="product-short-desc mb-4">
+                        <h2 class="h5 font-bold text-primary-dark mb-3">
+                            <i class="fas fa-star text-primary-red me-2"></i>
+                            Description
+                        </h2>
+                        <p class="lead text-dark-gray">{{ product.short_description }}</p>
+                    </div>
+
+                    <div class="product-description mb-4">
+                        <p class="text-dark-gray">{{ product.description|raw }}</p>
+                    </div>
+
+                    <div class="product-cta">
+                        <a href="{{ path('contact') }}" class="btn btn-primary-custom btn-lg me-3">
+                            <i class="fas fa-envelope me-2"></i>Demander un devis
+                        </a>
+                        <a href="{{ path('rental') }}" class="btn btn-outline-primary-custom btn-lg">
+                            <i class="fas fa-arrow-left me-2"></i>Retour au catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Caractéristiques techniques #}
+<section class="py-5 bg-light-bg">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-10 mx-auto scroll-reveal">
+                <div class="features-card">
+                    <div class="features-header">
+                        <i class="fas fa-cogs fa-3x text-primary-red mb-3"></i>
+                        <h2 class="h3 font-bold text-primary-dark mb-4">Caractéristiques Techniques</h2>
+                    </div>
+                    <div class="row g-3">
+                        {% for feature in product.features %}
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle text-primary-red me-2"></i>
+                                    <span>{{ feature }}</span>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Pourquoi louer chez IRCI #}
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="text-center mb-5 scroll-reveal">
+                    <h2 class="h3 font-bold text-primary-dark mb-3">
+                        <i class="fas fa-shield-alt text-primary-red me-2"></i>
+                        Pourquoi louer chez IRCI ?
+                    </h2>
+                    <p class="lead text-dark-gray">Les avantages de notre service de location</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 scroll-reveal-card">
+                        <div class="advantage-card text-center">
+                            <i class="fas fa-tools fa-3x text-primary-red mb-3"></i>
+                            <h3 class="h6 font-bold text-primary-dark mb-2">Matériel testé</h3>
+                            <p class="small text-dark-gray mb-0">
+                                Chaque équipement est vérifié et préparé avant livraison
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 scroll-reveal-card" style="animation-delay: 0.1s;">
+                        <div class="advantage-card text-center">
+                            <i class="fas fa-truck fa-3x text-primary-red mb-3"></i>
+                            <h3 class="h6 font-bold text-primary-dark mb-2">Livraison incluse</h3>
+                            <p class="small text-dark-gray mb-0">
+                                Transport, installation et reprise du matériel assurés
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 scroll-reveal-card" style="animation-delay: 0.2s;">
+                        <div class="advantage-card text-center">
+                            <i class="fas fa-headset fa-3x text-primary-red mb-3"></i>
+                            <h3 class="h6 font-bold text-primary-dark mb-2">Support technique</h3>
+                            <p class="small text-dark-gray mb-0">
+                                Assistance disponible pendant toute la durée de location
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 scroll-reveal-card" style="animation-delay: 0.3s;">
+                        <div class="advantage-card text-center">
+                            <i class="fas fa-medal fa-3x text-primary-red mb-3"></i>
+                            <h3 class="h6 font-bold text-primary-dark mb-2">Qualité pro</h3>
+                            <p class="small text-dark-gray mb-0">
+                                Marques reconnues et matériel haut de gamme
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# CTA Final #}
+<section class="py-5 bg-primary-red text-white">
+    <div class="container py-4 text-center scroll-reveal">
+        <h2 class="h3 font-bold mb-3">Intéressé par ce produit ?</h2>
+        <p class="lead mb-4">Contactez-nous pour obtenir un devis personnalisé pour {{ product.name }}</p>
+        <a href="{{ path('contact') }}" class="btn btn-light btn-lg">
+            <i class="fas fa-envelope me-2"></i>Demander un devis gratuit
+        </a>
+    </div>
+</section>
+
+<style>
+/* Product Detail Styles */
+.product-detail-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.product-detail-image img {
+    border-radius: 12px;
+}
+
+.product-detail-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--primary-red);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4);
+}
+
+.product-meta {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: var(--light-bg);
+    border-radius: 8px;
+}
+
+.meta-item {
+    font-size: 15px;
+    color: var(--dark-gray);
+}
+
+.product-short-desc {
+    padding: 25px;
+    background: var(--light-bg);
+    border-left: 4px solid var(--primary-red);
+    border-radius: 8px;
+}
+
+/* Features Card */
+.features-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.features-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: var(--light-bg);
+    border-radius: 6px;
+    font-size: 15px;
+    color: var(--dark-gray);
+}
+
+.feature-item i {
+    flex-shrink: 0;
+}
+
+/* Advantage Cards */
+.advantage-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 2px solid rgba(220, 20, 60, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(220, 20, 60, 0.15);
+    border-color: var(--primary-red);
+}
+
+/* Breadcrumb custom */
+.breadcrumb {
+    background: transparent;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "›";
+    color: var(--dark-gray);
+}
+
+.breadcrumb-item a {
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primary-red);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-meta {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .product-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .product-cta .btn {
+        width: 100%;
+        margin: 0 !important;
+    }
+}
+</style>
+{% endblock %}

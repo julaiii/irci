@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: #0f3460;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .content {
+            background: white;
+            padding: 30px;
+            border: 1px solid #e9ecef;
+        }
+        .highlight-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 4px solid #e94560;
+            margin: 20px 0;
+        }
+        .info-section {
+            margin: 25px 0;
+        }
+        .info-section h3 {
+            color: #0f3460;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 12px;
+            border-radius: 0 0 5px 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #e94560;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎉 Merci pour votre demande !</h1>
+    </div>
+    
+    <div class="content">
+        <p>Bonjour <strong>{{ contact.nom }}</strong>,</p>
+
+        <p>Nous avons bien reçu votre 
+            {% if contact.typeContact == 'prestation' %}
+                <strong>demande de prestation</strong>
+            {% elseif contact.typeContact == 'devis' %}
+                <strong>demande de devis</strong>
+            {% else %}
+                <strong>message</strong>
+            {% endif %}
+            et nous vous en remercions.
+        </p>
+
+        <div class="highlight-box">
+            <p style="margin: 0;"><strong>⏱️ Notre équipe vous répondra dans les plus brefs délais</strong>, généralement sous 24 à 48 heures ouvrées.</p>
+        </div>
+
+        <div class="info-section">
+            <h3>📋 Récapitulatif de votre demande</h3>
+            <p><strong>Type :</strong> 
+                {% if contact.typeContact == 'prestation' %}
+                    Demande de prestation
+                {% elseif contact.typeContact == 'devis' %}
+                    Demande de devis
+                {% else %}
+                    Message général
+                {% endif %}
+            </p>
+            <p><strong>Date :</strong> {{ contact.createdAt|date('d/m/Y à H:i') }}</p>
+            <p><strong>Votre message :</strong></p>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 5px;">
+                {{ contact.message|nl2br }}
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>📞 Besoin d'informations supplémentaires ?</h3>
+            <p>N'hésitez pas à nous contacter directement :</p>
+            <ul style="list-style: none; padding: 0;">
+                <li>📧 Email : <a href="mailto:contact@irci.fr">contact@irci.fr</a></li>
+                <li>📱 Téléphone : À définir</li>
+            </ul>
+        </div>
+
+        <p style="margin-top: 30px;">À très bientôt,<br><strong>L'équipe IRCI</strong></p>
+    </div>
+
+    <div class="footer">
+        <p><strong>IRCI - Prestataire Événementiel Professionnel</strong></p>
+        <p>Son • Lumière • Enregistrement • Multimédia</p>
+        <p style="margin-top: 15px; font-size: 11px;">
+            Cet email a été envoyé automatiquement, merci de ne pas y répondre directement.<br>
+            Pour toute question, contactez-nous à contact@irci.fr
+        </p>
+    </div>
+</body>
+</html>

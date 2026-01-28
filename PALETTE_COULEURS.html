@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette IRCI - Guide des couleurs</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+            margin-bottom: 10px;
+            font-size: 36px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #DC143C;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+        .colors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .color-card {
+            border: 2px solid #E0E0E0;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .color-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .color-preview {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .color-info {
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .color-name {
+            font-weight: bold;
+            color: #2C3E50;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .color-code {
+            font-family: 'Courier New', monospace;
+            color: #DC143C;
+            margin-bottom: 8px;
+        }
+        .color-usage {
+            color: #424242;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .examples {
+            margin-top: 40px;
+            padding: 30px;
+            background: #F8F9FA;
+            border-radius: 10px;
+        }
+        .examples h2 {
+            color: #2C3E50;
+            margin-bottom: 20px;
+        }
+        .button-demo {
+            display: inline-block;
+            padding: 12px 32px;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid;
+        }
+        .btn-primary {
+            background: #2C3E50;
+            color: white;
+            border-color: #2C3E50;
+        }
+        .btn-primary:hover {
+            background: #DC143C;
+            border-color: #DC143C;
+        }
+        .btn-accent {
+            background: #DC143C;
+            color: white;
+            border-color: #DC143C;
+        }
+        .btn-accent:hover {
+            background: #B21030;
+            border-color: #B21030;
+        }
+        .nav-demo {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            border-bottom: 3px solid #DC143C;
+            margin-top: 20px;
+        }
+        .nav-link {
+            color: #424242;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #DC143C;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #DC143C;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Palette de Couleurs IRCI</h1>
+        <p class="subtitle">Design Rouge Nuancé & Harmonieux</p>
+        
+        <div class="colors-grid">
+            <div class="color-card">
+                <div class="color-preview" style="background: #DC143C;">ROUGE</div>
+                <div class="color-info">
+                    <div class="color-name">Rouge Principal</div>
+                    <div class="color-code">#DC143C</div>
+                    <div class="color-usage">Boutons CTAs, liens importants, accents forts</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-preview" style="background: #E57373;">ROUGE DOUX</div>
+                <div class="color-info">
+                    <div class="color-name">Rouge Adouci</div>
+                    <div class="color-code">#E57373</div>
+                    <div class="color-usage">Accents secondaires, icônes, hover effects</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-preview" style="background: #FFEBEE; color: #2C3E50;">ROUGE LÉGER</div>
+                <div class="color-info">
+                    <div class="color-name">Rouge Très Léger</div>
+                    <div class="color-code">#FFEBEE</div>
+                    <div class="color-usage">Backgrounds subtils, highlights</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-preview" style="background: #2C3E50;">ANTHRACITE</div>
+                <div class="color-info">
+                    <div class="color-name">Gris Anthracite</div>
+                    <div class="color-code">#2C3E50</div>
+                    <div class="color-usage">Headers, navigation, textes importants</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-preview" style="background: #F5E6D3; color: #2C3E50;">BEIGE CHAUD</div>
+                <div class="color-info">
+                    <div class="color-name">Beige Chaud</div>
+                    <div class="color-code">#F5E6D3</div>
+                    <div class="color-usage">Adoucissement, accents chaleureux</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-preview" style="background: #F8F9FA; color: #2C3E50;">BLANC CASSÉ</div>
+                <div class="color-info">
+                    <div class="color-name">Blanc Cassé</div>
+                    <div class="color-code">#F8F9FA</div>
+                    <div class="color-usage">Backgrounds principaux, cartes</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-preview" style="background: #424242;">GRIS FONCÉ</div>
+                <div class="color-info">
+                    <div class="color-name">Gris Foncé</div>
+                    <div class="color-code">#424242</div>
+                    <div class="color-usage">Textes secondaires, descriptions</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-preview" style="background: #E0E0E0; color: #2C3E50;">GRIS CLAIR</div>
+                <div class="color-info">
+                    <div class="color-name">Gris Clair</div>
+                    <div class="color-code">#E0E0E0</div>
+                    <div class="color-usage">Bordures, séparateurs, inputs</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="examples">
+            <h2>Exemples d'utilisation</h2>
+            
+            <h3 style="color: #2C3E50; margin-top: 30px;">Boutons</h3>
+            <a href="#" class="button-demo btn-primary">Bouton Principal</a>
+            <a href="#" class="button-demo btn-accent">Bouton Accent</a>
+            
+            <h3 style="color: #2C3E50; margin-top: 30px;">Navigation</h3>
+            <div class="nav-demo">
+                <a href="#" class="nav-link">Accueil</a>
+                <a href="#" class="nav-link">Prestations</a>
+                <a href="#" class="nav-link">À Propos</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+            
+            <div style="margin-top: 40px; padding: 20px; background: white; border-radius: 5px;">
+                <h3 style="color: #2C3E50; margin-bottom: 15px;">Principes de Design</h3>
+                <ul style="color: #424242; line-height: 2; margin-left: 20px;">
+                    <li><strong style="color: #DC143C;">Le rouge pour l'action</strong> - CTAs et éléments interactifs importants</li>
+                    <li><strong style="color: #E57373;">Le rouge adouci pour l'élégance</strong> - Accents visuels et hover states</li>
+                    <li><strong style="color: #2C3E50;">Le gris anthracite pour la structure</strong> - Headers, navigation, textes principaux</li>
+                    <li><strong style="color: #424242;">Nuances de gris pour la hiérarchie</strong> - Textes secondaires, bordures</li>
+                    <li><strong style="color: #F5E6D3;">Le beige pour la chaleur</strong> - Adoucit l'ensemble et apporte convivialité</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
