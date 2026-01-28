@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
             <meta name="description" content="Location de matériel audiovisuel professionnel : son, lumière, vidéo, effets. Catalogue complet pour vos événements.">
-        <meta name="keywords" content="prestataire événementiel, sonorisation, éclairage, lumière, son, enregistrement, multimédia, location matériel audiovisuel, événements professionnels, concerts, salons">
+        <meta name="keywords" content="prestataire évènementiel, sonorisation, éclairage, lumière, audiovisuel, multimédia, contrôle d'accès, régie technique, location matériel audiovisuel, événements professionnels, salons, congrès, Marseille">
         <meta name="author" content="IRCI">
         <meta name="robots" content="index, follow">
         <meta property="og:title" content="IRCI - Prestataire Événementiel Professionnel">
         <meta property="og:description" content="Solutions techniques complètes pour vos événements : son, lumière, enregistrement, multimédia.">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="http://localhost:8080/location-materiel">
-        <meta property="og:image" content="http://localhost:8080/images/irci.jpg">
+        <meta property="og:url" content="https://127.0.0.1:8000/location-materiel">
+        <meta property="og:image" content="https://127.0.0.1:8000./images/irci.jpg">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="IRCI - Prestataire Événementiel">
         <meta name="twitter:description" content="Son • Lumière • Enregistrement • Multimédia">
@@ -110,7 +110,7 @@
                 </h2>
                 <p class="lead text-dark-gray mb-3">
                     IRCI met à votre disposition un catalogue de matériel audiovisuel professionnel de marques reconnues. 
-                    Sonorisation, éclairage, vidéo, effets : tout ce dont vous avez besoin pour réussir votre événement.
+                    Sonorisation, éclairage, vidéo, informatique : tout ce dont vous avez besoin pour réussir votre évènement.
                 </p>
                 <p class="text-dark-gray">
                     <strong class="text-primary-red">Livraison, installation et reprise incluses.</strong> 
@@ -124,11 +124,11 @@
 <section class="py-4 bg-light-bg sticky-top border-bottom" style="top: 76px; z-index: 999;">
     <div class="container">
         <div class="nav nav-pills justify-content-center flex-wrap">
-            <a class="nav-link active" href="#all" data-filter="all">Tout</a>
-            <a class="nav-link" href="#sonorisation" data-filter="sonorisation">Sonorisation</a>
-            <a class="nav-link" href="#lumiere" data-filter="lumiere">Lumière</a>
-            <a class="nav-link" href="#video" data-filter="video">Vidéo</a>
-            <a class="nav-link" href="#effets" data-filter="effets">Effets</a>
+            <a class="nav-link active" href="#all" data-filter="all" style="color: white; background-color: var(--primary-red);">Tout</a>
+            <a class="nav-link" href="#sonorisation" data-filter="sonorisation" style="color: white; background-color: var(--primary-red);">Sonorisation</a>
+            <a class="nav-link" href="#lumiere" data-filter="lumiere" style="color: white; background-color: var(--primary-red);">Lumière</a>
+            <a class="nav-link" href="#multimedia" data-filter="multimedia" style="color: white; background-color: var(--primary-red);">Multimédia</a>
+            <a class="nav-link" href="#controle-acces" data-filter="controle-acces" style="color: white; background-color: var(--primary-red);">Contrôle d'accès</a>
         </div>
     </div>
 </section>
@@ -136,144 +136,557 @@
 <section class="py-5 bg-white">
     <div class="container py-4">
         <div class="row g-4" id="products-grid">
-                        <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation">
-                <a href="./location-materiel/console-yamaha-dm3" class="text-decoration-none">
-                    <div class="product-card h-100">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&h=600&fit=crop" 
-                                 alt="Console Yamaha DM3" 
-                                 class="img-fluid">
-                            <span class="product-badge">Sonorisation</span>
-                        </div>
-                        <div class="product-body">
-                            <h3 class="product-title">Console Numérique Yamaha DM3</h3>
-                            <p class="product-description">
-                                Console de mixage numérique compacte et puissante pour événements professionnels
-                            </p>
-                            <div class="product-footer">
-                                <span class="product-year"><i class="fas fa-calendar me-2"></i>2023</span>
-                                <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 0s;">
+                    <a href="./location-materiel/midas-m32r-live" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Midas M32R Live.jpg" 
+                                     alt="MIDAS M32R Live" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">MIDAS M32R Live</h3>
+                                <p class="product-description">
+                                    Console numérique compacte et flexible, jusqu&#039;à 32 entrées
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-
-                        <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 0.1s;">
-                <a href="./location-materiel/enceinte-l-acoustics-x12" class="text-decoration-none">
-                    <div class="product-card h-100">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1545990500-a5b9e244d13f?w=800&h=600&fit=crop" 
-                                 alt="Enceinte L-Acoustics X12" 
-                                 class="img-fluid">
-                            <span class="product-badge">Sonorisation</span>
-                        </div>
-                        <div class="product-body">
-                            <h3 class="product-title">Enceinte L-Acoustics X12</h3>
-                            <p class="product-description">
-                                Enceinte coaxiale haut de gamme pour une diffusion parfaite
-                            </p>
-                            <div class="product-footer">
-                                <span class="product-year"><i class="fas fa-calendar me-2"></i>2022</span>
-                                <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 0.1s;">
+                    <a href="./location-materiel/jbl-eon-610-710" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/JBL EON 610-710.jpg" 
+                                     alt="JBL EON 610/710" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">JBL EON 610/710</h3>
+                                <p class="product-description">
+                                    Enceinte amplifiée, large bande active
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-
-                        <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="lumiere" style="animation-delay: 0.2s;">
-                <a href="./location-materiel/projecteur-led-martin-mac-aura" class="text-decoration-none">
-                    <div class="product-card h-100">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=600&fit=crop" 
-                                 alt="Projecteur LED Martin MAC Aura" 
-                                 class="img-fluid">
-                            <span class="product-badge badge-light">Lumière</span>
-                        </div>
-                        <div class="product-body">
-                            <h3 class="product-title">Projecteur LED Martin MAC Aura</h3>
-                            <p class="product-description">
-                                Projecteur wash LED avec effet backlight unique
-                            </p>
-                            <div class="product-footer">
-                                <span class="product-year"><i class="fas fa-calendar me-2"></i>2023</span>
-                                <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 0.2s;">
+                    <a href="./location-materiel/jbl-control-25" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/JBL Control 25.jpg" 
+                                     alt="JBL Control 25" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">JBL Control 25</h3>
+                                <p class="product-description">
+                                    Enceinte passive et compacte
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-
-                        <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="lumiere" style="animation-delay: 0.3s;">
-                <a href="./location-materiel/lyre-robe-robin-600" class="text-decoration-none">
-                    <div class="product-card h-100">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&h=600&fit=crop" 
-                                 alt="Lyre Robe Robin 600" 
-                                 class="img-fluid">
-                            <span class="product-badge badge-light">Lumière</span>
-                        </div>
-                        <div class="product-body">
-                            <h3 class="product-title">Lyre Robe Robin 600 LED Beam</h3>
-                            <p class="product-description">
-                                Lyre LED beam ultra-rapide et puissante
-                            </p>
-                            <div class="product-footer">
-                                <span class="product-year"><i class="fas fa-calendar me-2"></i>2023</span>
-                                <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 0.3s;">
+                    <a href="./location-materiel/behringer-mpa-200bt" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Behringer MPA 200BT.jpg" 
+                                     alt="Behringer MPA 200BT" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Behringer MPA 200BT</h3>
+                                <p class="product-description">
+                                    Enceinte compacte bluetooth sur batterie
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-
-                        <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="video" style="animation-delay: 0.4s;">
-                <a href="./location-materiel/ecran-led-absen-a3pro" class="text-decoration-none">
-                    <div class="product-card h-100">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop" 
-                                 alt="Écran LED Absen A3 Pro" 
-                                 class="img-fluid">
-                            <span class="product-badge badge-video">Vidéo</span>
-                        </div>
-                        <div class="product-body">
-                            <h3 class="product-title">Écran LED Absen A3 Pro</h3>
-                            <p class="product-description">
-                                Écran LED haute résolution pour événements indoor
-                            </p>
-                            <div class="product-footer">
-                                <span class="product-year"><i class="fas fa-calendar me-2"></i>2024</span>
-                                <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 0.4s;">
+                    <a href="./location-materiel/behringer-xenyx-x1204" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Behringer Xenyx X1204USB.jpg" 
+                                     alt="Behringer Xenyx X1204USB" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Behringer Xenyx X1204USB</h3>
+                                <p class="product-description">
+                                    Console compacte 12 entrées
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-
-                        <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="effets" style="animation-delay: 0.5s;">
-                <a href="./location-materiel/machine-fumee-antari-z1520" class="text-decoration-none">
-                    <div class="product-card h-100">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=800&h=600&fit=crop" 
-                                 alt="Machine à Fumée Antari Z-1520" 
-                                 class="img-fluid">
-                            <span class="product-badge badge-effects">Effets</span>
-                        </div>
-                        <div class="product-body">
-                            <h3 class="product-title">Machine à Fumée Antari Z-1520</h3>
-                            <p class="product-description">
-                                Machine à fumée professionnelle haute puissance
-                            </p>
-                            <div class="product-footer">
-                                <span class="product-year"><i class="fas fa-calendar me-2"></i>2023</span>
-                                <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 0.5s;">
+                    <a href="./location-materiel/soundcraft-efx12" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Soundcraft EFX12.jpg" 
+                                     alt="Soundcraft EFX12" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Soundcraft EFX12</h3>
+                                <p class="product-description">
+                                    Console analogique 14 entrées
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
                             </div>
                         </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 0.6s;">
+                    <a href="./location-materiel/soundcraft-m8" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Soundcraft M8.jpg" 
+                                     alt="Soundcraft M8" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Soundcraft M8</h3>
+                                <p class="product-description">
+                                    Console 12 voies
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 0.7s;">
+                    <a href="./location-materiel/micros-shure-analogique" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Micro Shure Analogique.jpg" 
+                                     alt="Micros HF Shure Analogique" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Micros HF Shure Analogique</h3>
+                                <p class="product-description">
+                                    Micro HF cardioïde SM58
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 0.8s;">
+                    <a href="./location-materiel/pack-micros-shure-numeriques" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Pack micros Shure numériques.jpg" 
+                                     alt="Pack micros HF Shure numériques" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Pack micros HF Shure numériques</h3>
+                                <p class="product-description">
+                                    Micros montés en pack avec manager de fréquence. Idéal pour des tables rondes
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 0.9s;">
+                    <a href="./location-materiel/micro-serre-tete-shure-sm35" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Micros serre tete.jpg" 
+                                     alt="Micro serre-tête Shure SM35 TQG" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Micro serre-tête Shure SM35 TQG</h3>
+                                <p class="product-description">
+                                    Pour une utilisation main libre et une qualité inchangée
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 1s;">
+                    <a href="./location-materiel/micro-cravate-shure-cvl" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Micros serre tete.jpg" 
+                                     alt="Micro cravate Shure CVL" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Micro cravate Shure CVL</h3>
+                                <p class="product-description">
+                                    Pour une utilisation main libre et une qualité inchangée
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="sonorisation" style="animation-delay: 1.1s;">
+                    <a href="./location-materiel/rack-son-cle-en-main" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Rack son cle en main.jpg" 
+                                     alt="Rack son clé en main" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Sonorisation</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Rack son clé en main</h3>
+                                <p class="product-description">
+                                    Rack son équipé, il est conçu pour être autonome
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="lumiere" style="animation-delay: 1.2s;">
+                    <a href="./location-materiel/eurolite-pfe60" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Eurolite PFE60.jpg" 
+                                     alt="Eurolite PFE60 WW/CW Pro. Sport" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge badge-light">Lumière</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Eurolite PFE60 WW/CW Pro. Sport</h3>
+                                <p class="product-description">
+                                    Projecteurs à découpe, plusieurs angles de faisceaux disponibles
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="lumiere" style="animation-delay: 1.3s;">
+                    <a href="./location-materiel/eurolite-bar-12-qcl" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Eurolite bar 12.jpg" 
+                                     alt="Eurolite bar-12 QCL" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge badge-light">Lumière</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Eurolite bar-12 QCL</h3>
+                                <p class="product-description">
+                                    Barre de 12 LED, couleur personnalisable à souhait.
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="lumiere" style="animation-delay: 1.4s;">
+                    <a href="./location-materiel/stairville-ddc-12-lcd-dmx" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Stairville DMX Controller.jpg" 
+                                     alt="Stairville DDC-12 LCD DMX Controller" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge badge-light">Lumière</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Stairville DDC-12 LCD DMX Controller</h3>
+                                <p class="product-description">
+                                    Pupitre DMX 12 canaux
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="multimedia" style="animation-delay: 1.5s;">
+                    <a href="./location-materiel/televisions-samsung" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/TV Samsung.jpg" 
+                                     alt="Télévisions Samsung" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge badge-video">Multimédia</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Télévisions Samsung</h3>
+                                <p class="product-description">
+                                    Ecrans de la marque Samsung exclusivement pour homogénéiser vos espaces
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="multimedia" style="animation-delay: 1.6s;">
+                    <a href="./location-materiel/videoprojecteur-courte-focale" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/VP courte focale.jpeg" 
+                                     alt="Vidéoprojecteur courte focale" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge badge-video">Multimédia</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Vidéoprojecteur courte focale</h3>
+                                <p class="product-description">
+                                    Vidéoprojecteur FullHD de 3600 à 4000 lumens
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="multimedia" style="animation-delay: 1.7s;">
+                    <a href="./location-materiel/videoprojecteur-haute-resolution" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/VP haute résolution.jpeg" 
+                                     alt="Vidéoprojecteur haute résolution" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge badge-video">Multimédia</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Vidéoprojecteur haute résolution</h3>
+                                <p class="product-description">
+                                    Projecteur LCD à partir de 5000 lumens
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="multimedia" style="animation-delay: 1.8s;">
+                    <a href="./location-materiel/videoprojecteur-longue-distance" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/VP longue distance.jpg" 
+                                     alt="Vidéoprojecteur longue distance" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge badge-video">Multimédia</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Vidéoprojecteur longue distance</h3>
+                                <p class="product-description">
+                                    Projecteur longue distance haute luminosité (7000 lumens)
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="multimedia" style="animation-delay: 1.9s;">
+                    <a href="./location-materiel/tablettes-tactiles" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Tablettes tactiles.jpeg" 
+                                     alt="Tablettes tactiles" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge badge-video">Multimédia</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Tablettes tactiles</h3>
+                                <p class="product-description">
+                                    Tablettes Apple ou Samsung selon préférence
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="multimedia" style="animation-delay: 2s;">
+                    <a href="./location-materiel/ordinateurs-portables" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Ordinateurs.webp" 
+                                     alt="Ordinateurs portables" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge badge-video">Multimédia</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Ordinateurs portables</h3>
+                                <p class="product-description">
+                                    Ordinateurs sous Windows avec un processeur allant de i3 à i7 avec pack office
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="controle-dacces" style="animation-delay: 2.1s;">
+                    <a href="./location-materiel/lecteur-cs-4070" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/CS4070.png" 
+                                     alt="Lecteur CS 4070" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Contrôle d&#039;accès</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Lecteur CS 4070</h3>
+                                <p class="product-description">
+                                    Douchette de contrôle d&#039;accès compact
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="controle-dacces" style="animation-delay: 2.2s;">
+                    <a href="./location-materiel/pda-zebra-tc21" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Zebra TC21.jpg" 
+                                     alt="PDA Zebra TC21" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Contrôle d&#039;accès</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">PDA Zebra TC21</h3>
+                                <p class="product-description">
+                                    Matériel de contrôle d&#039;accès en temps réel
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="controle-dacces" style="animation-delay: 2.3s;">
+                    <a href="./location-materiel/imprimante-multifonction-laser-hp" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Imprimante multifonction.jpeg" 
+                                     alt="Imprimante multifonction laser HP" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Contrôle d&#039;accès</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Imprimante multifonction laser HP</h3>
+                                <p class="product-description">
+                                    Imprimante couleur avec fonction copie et scanner inclus
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                            <div class="col-md-6 col-lg-4 product-item scroll-reveal-card" data-category="controle-dacces" style="animation-delay: 2.4s;">
+                    <a href="./location-materiel/imprimante-laser-noir-blanc" class="text-decoration-none">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <img src="/IRCI/Imprimante laser noir et blanc.jpeg" 
+                                     alt="Imprimante laser noir et blanc" 
+                                     class="img-fluid"
+                                     onerror="this.src='./images/placeholder.jpg'">
+                                <span class="product-badge ">Contrôle d&#039;accès</span>
+                            </div>
+                            <div class="product-body">
+                                <h3 class="product-title">Imprimante laser noir et blanc</h3>
+                                <p class="product-description">
+                                    Imprimante laser compacte
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-link">Voir détails <i class="fas fa-arrow-right ms-2"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
                     </div>
-                </a>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -350,6 +763,11 @@
     background: #16A085;
 }
 
+.product-badge {
+    color: white;
+    font-weight: 600;
+}
+
 .product-body {
     padding: 25px;
 }
@@ -378,11 +796,6 @@
     border-top: 2px solid rgba(220, 20, 60, 0.1);
 }
 
-.product-year {
-    font-size: 13px;
-    color: var(--dark-gray);
-    font-weight: 500;
-}
 
 .product-link {
     color: var(--primary-red);
@@ -396,18 +809,21 @@
 
 /* Navigation pills personnalisée */
 .nav-pills .nav-link {
-    color: var(--dark-gray);
+    color: white;
+    background-color: var(--primary-red);
     font-weight: 500;
     padding: 10px 20px;
     border-radius: 25px;
     transition: all 0.3s ease;
     margin: 0 5px;
+    opacity: 0.8;
 }
 
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link.active {
     background: var(--primary-red);
     color: white;
+    opacity: 1;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(220, 20, 60, 0.3);
 }
@@ -453,7 +869,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </span>
                     </h5>
                     <p class="text-light-gray">
-                        Prestataire événementiel professionnel spécialisé en son, lumière, enregistrement et multimédia.
+                        Prestataire évènementiel spécialisé en audiovisuel, multimédia et gestion des flux visiteurs.
                     </p>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -470,15 +886,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="col-md-4 mb-4">
                     <h5 class="mb-3">Contact</h5>
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-phone me-2"></i>À définir</li>
-                        <li><i class="fas fa-envelope me-2"></i>contact@irci.fr</li>
-                        <li><i class="fas fa-map-marker-alt me-2"></i>France</li>
+                        <li><i class="fas fa-phone me-2"></i>06 68 56 38 43</li>
+                        <li><i class="fas fa-envelope me-2"></i>contact@irci-salon.fr</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Marseille, France</li>
+                        <li class="mt-2">
+                            <a href="https://fr.linkedin.com/company/irci-salon" target="_blank" rel="noopener noreferrer" class="text-light-gray">
+                                <i class="fab fa-linkedin me-2"></i>LinkedIn
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <hr class="my-4 bg-light opacity-25">
             <div class="text-center">
-                <p class="mb-0">&copy; 2026 IRCI - Tous droits réservés</p>
+                <p class="mb-2">&copy; 2026 IRCI - Tous droits réservés</p>
+                <p class="mb-0">
+                    <a href="./mentions-legales" class="text-light-gray small">Mentions légales</a>
+                </p>
             </div>
         </div>
     </footer>
@@ -491,19 +915,22 @@ document.addEventListener('DOMContentLoaded', function() {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "IRCI",
-        "description": "Prestataire événementiel professionnel spécialisé en son, lumière, enregistrement et multimédia",
-        "url": "http://localhost:8080",
-        "logo": "http://localhost:8080/images/irci.jpg",
-        "image": "http://localhost:8080/images/irci.jpg",
-        "email": "contact@irci.fr",
+        "description": "Prestataire évènementiel spécialisé en audiovisuel, multimédia et gestion des flux visiteurs",
+        "url": "https://127.0.0.1:8000",
+        "logo": "https://127.0.0.1:8000./images/irci.jpg",
+        "image": "https://127.0.0.1:8000./images/irci.jpg",
+        "email": "contact@irci-salon.fr",
+        "telephone": "06 68 56 38 43",
         "address": {
             "@type": "PostalAddress",
+            "addressLocality": "Marseille",
             "addressCountry": "FR",
             "addressRegion": "France"
         },
         "priceRange": "€€",
         "openingHours": "Mo-Fr 09:00-18:00",
         "sameAs": [
+            "https://fr.linkedin.com/company/irci-salon"
         ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
@@ -529,16 +956,32 @@ document.addEventListener('DOMContentLoaded', function() {
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Enregistrement audio",
-                        "description": "Captation multi-pistes professionnelle"
+                        "name": "Équipement audiovisuel",
+                        "description": "Matériel de sonorisation professionnel, poursuites lumières, vidéoprojecteurs ou écrans UHD"
                     }
                 },
                 {
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "Service",
-                        "name": "Solutions multimédia",
-                        "description": "Vidéo, écrans LED, projection"
+                        "name": "Multimédia",
+                        "description": "Location d'équipements multimédia, TV UHD, tablettes, ordinateurs"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Contrôle d'accès",
+                        "description": "Matériel pour l'enregistrement des visiteurs, contrôle d'accès avec stats en temps réel"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Régie technique",
+                        "description": "Supervision de votre montage, gestion des prestataires d'installation, coordination des équipes"
                     }
                 },
                 {
