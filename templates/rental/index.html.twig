@@ -45,8 +45,8 @@
                     Sonorisation, éclairage, vidéo, informatique : tout ce dont vous avez besoin pour réussir votre évènement.
                 </p>
                 <p class="text-dark-gray">
-                    <strong class="text-primary-red">Livraison, installation et reprise incluses.</strong> 
-                    Support technique disponible pour vous accompagner dans votre projet.
+                    <strong class="text-primary-red">Livraison, installation et reprise possible.</strong> 
+                    Support technique inclus pour vous accompagner dans votre projet.
                 </p>
             </div>
         </div>
@@ -57,11 +57,11 @@
 <section class="py-4 bg-light-bg sticky-top border-bottom" style="top: 76px; z-index: 999;">
     <div class="container">
         <div class="nav nav-pills justify-content-center flex-wrap">
-            <a class="nav-link active" href="#all" data-filter="all" style="color: white; background-color: var(--primary-red);">Tout</a>
-            <a class="nav-link" href="#sonorisation" data-filter="sonorisation" style="color: white; background-color: var(--primary-red);">Sonorisation</a>
-            <a class="nav-link" href="#lumiere" data-filter="lumiere" style="color: white; background-color: var(--primary-red);">Lumière</a>
-            <a class="nav-link" href="#multimedia" data-filter="multimedia" style="color: white; background-color: var(--primary-red);">Multimédia</a>
-            <a class="nav-link" href="#controle-acces" data-filter="controle-acces" style="color: white; background-color: var(--primary-red);">Contrôle d'accès</a>
+            <a class="nav-link text-dark active" href="#all" data-filter="all">Tout</a>
+            <a class="nav-link text-dark" href="#sonorisation" data-filter="sonorisation">Sonorisation</a>
+            <a class="nav-link text-dark" href="#lumiere" data-filter="lumiere">Lumière</a>
+            <a class="nav-link text-dark" href="#multimedia" data-filter="multimedia">Multimédia</a>
+            <a class="nav-link text-dark" href="#controle-acces" data-filter="controle-acces">Contrôle d'accès</a>
         </div>
     </div>
 </section>
@@ -219,21 +219,18 @@
 
 /* Navigation pills personnalisée */
 .nav-pills .nav-link {
-    color: white;
-    background-color: var(--primary-red);
+    color: var(--dark-gray);
     font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 25px;
     transition: all 0.3s ease;
-    margin: 0 5px;
-    opacity: 0.8;
+    border-radius: 8px;
+    padding: 10px 20px !important;
+    margin: 0 8px;
 }
 
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link.active {
-    background: var(--primary-red);
-    color: white;
-    opacity: 1;
+    background-color: var(--primary-red);
+    color: white !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(220, 20, 60, 0.3);
 }

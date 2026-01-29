@@ -35,7 +35,7 @@
 <section class="bg-light-bg py-3 sticky-top border-bottom">
     <div class="container">
         <nav class="nav nav-pills justify-content-center flex-wrap">
-            <a class="nav-link text-dark" href="#audiovisuel">Audiovisuel</a>
+            <a class="nav-link text-dark" href="#audiovisuel">Equipement audiovisuel</a>
             <a class="nav-link text-dark" href="#multimedia">Multimédia</a>
             <a class="nav-link text-dark" href="#controle-acces">Contrôle d'accès</a>
             <a class="nav-link text-dark" href="#regie-technique">Régie technique</a>
@@ -53,7 +53,7 @@
                     <div class="mb-3">
                         <i class="fas fa-volume-up fa-4x text-accent-gold"></i>
                     </div>
-                    <h2 class="display-6 font-bold text-primary-blue mb-3">Audiovisuel</h2>
+                    <h2 class="display-6 font-bold text-primary-blue mb-3">Equipement audiovisuel</h2>
                     <p class="lead text-dark-gray mb-4">
                         Équipement de vos salles de conférences/congrès
                     </p>
@@ -95,10 +95,7 @@
                     </div>
                     <h2 class="display-6 font-bold text-primary-blue mb-3">Multimédia</h2>
                     <p class="lead text-dark-gray mb-4">
-                        Location d'équipements multimédia, TV UHD, tablettes, ordinateurs
-                    </p>
-                    <p class="text-dark-gray">
-                        Nous vous proposons de nombreuses références d'équipements.
+                        Vidéoprojecteurs haute définition, écrans TV 4K, tablettes, ordinateurs. Nous vous proposons de nombreuses références d'équipements.
                     </p>
                 </div>
             </div>
@@ -196,7 +193,7 @@
             <div class="col-lg-6 scroll-reveal-left">
                 <div class="pe-lg-4">
                     <div class="mb-3">
-                        <i class="fas fa-truck fa-4x text-accent-orange"></i>
+                        <i class="fas fa-check fa-4x text-accent-orange"></i>
                     </div>
                     <h2 class="display-6 font-bold text-primary-blue mb-3">Location de Matériel</h2>
                     <p class="lead text-dark-gray mb-4">
@@ -239,11 +236,11 @@
     <div class="container py-5 text-center scroll-reveal">
         <h2 class="display-5 font-bold mb-4">Un projet en tête ?</h2>
         <p class="lead mb-4">Discutons ensemble de vos besoins techniques</p>
-        <div class="d-flex gap-3 justify-content-center flex-wrap">
-            <a href="{{ path('contact') }}" class="btn btn-accent btn-lg">
+        <div class="d-flex gap-3 justify-content-center flex-wrap align-items-stretch">
+            <a href="{{ path('contact') }}" class="btn btn-accent btn-lg d-flex align-items-center">
                 <i class="fas fa-file-alt me-2"></i>Demander un devis
             </a>
-            <a href="{{ path('contact') }}" class="btn btn-outline-light btn-lg">
+            <a href="{{ path('contact') }}" class="btn btn-outline-light btn-lg d-flex align-items-center">
                 <i class="fas fa-phone me-2"></i>Nous appeler
             </a>
         </div>
@@ -269,6 +266,10 @@
 
 section[id] {
     scroll-margin-top: 100px;
+}
+
+.d-flex.gap-3 > .btn {
+    min-height: 48px;
 }
 </style>
 {% endblock %}

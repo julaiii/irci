@@ -15,9 +15,7 @@
                     <span class="text-primary-red-light">à taille humaine</span>
                 </h1>
                 <p class="lead fs-4 mb-4 scroll-reveal" style="max-width: 900px; margin: 0 auto;">
-                    Spécialistes de la <strong>sonorisation, de la lumière, de l'audiovisuel</strong>, du 
-                    <strong>contrôle d'accès</strong> et de la <strong>location de matériel événementiel</strong>, nous accompagnons vos événements professionnels 
-                    avec une approche humaine, personnalisée et une solide expérience terrain.
+                    Prestataire évènementiel spécialisé en audiovisuel, multimédia et gestion des flux visiteurs.
                 </p>
                 
                 <div class="row g-3 justify-content-center mb-5 mt-4 scroll-reveal">
@@ -47,17 +45,17 @@
                     </div>
                     <div class="col-auto">
                         <div class="bg-white bg-opacity-10 p-3 rounded">
-                            <i class="fas fa-truck text-primary-red-light fa-2x mb-2"></i>
+                            <i class="fas fa-check text-primary-red-light fa-2x mb-2"></i>
                             <p class="mb-0 small">Location</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="d-flex gap-3 justify-content-center flex-wrap scroll-reveal">
-                    <a href="{{ path('contact') }}" class="btn btn-accent btn-lg">
+                <div class="d-flex gap-3 justify-content-center flex-wrap scroll-reveal align-items-stretch">
+                    <a href="{{ path('contact') }}" class="btn btn-accent btn-lg d-flex align-items-center">
                         <i class="fas fa-file-alt me-2"></i>Demander un devis gratuit
                     </a>
-                    <a href="#about-family" class="btn btn-outline-light btn-lg">
+                    <a href="#about-family" class="btn btn-outline-light btn-lg d-flex align-items-center">
                         <i class="fas fa-arrow-down me-2"></i>Découvrir l'équipe
                     </a>
                 </div>
@@ -84,7 +82,7 @@
                          class="img-fluid rounded shadow-lg">
                     <div class="position-absolute bottom-0 start-0 p-3 bg-primary-red text-white rounded-end">
                         <i class="fas fa-users me-2"></i>
-                        <strong>Père et 3 fils</strong>
+                        <strong>Notre équipe</strong>
                     </div>
                 </div>
             </div>
@@ -93,7 +91,7 @@
                     Une équipe familiale passionnée
                 </h2>
                 <p class="fs-5 text-dark-gray mb-3">
-                    <strong>Depuis plus de 25 ans, notre équipe (père et 3 fils)</strong> 
+                    <strong>Depuis plus de 25 ans, notre équipe</strong> 
                     met son expertise à votre service.
                 </p>
                 <p class="text-dark-gray mb-4">
@@ -260,7 +258,7 @@
                 <div class="card h-100 border-0 shadow-sm hover-shadow">
                     <div class="card-body text-center p-4">
                         <div class="mb-4">
-                            <i class="fas fa-truck fa-4x text-accent-orange"></i>
+                            <i class="fas fa-check fa-4x text-accent-orange"></i>
                         </div>
                         <h3 class="h4 font-bold text-primary-blue mb-3">Location de Matériel</h3>
                         <p class="text-dark-gray">
@@ -296,6 +294,10 @@
 
 .min-vh-50 {
     min-height: 50vh;
+}
+
+.d-flex.gap-3 > .btn {
+    min-height: 48px;
 }
 </style>
 {% endblock %}
