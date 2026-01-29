@@ -446,6 +446,87 @@ footer .text-light-gray {
   box-shadow: 0 2px 6px rgba(220, 20, 60, 0.5);
 }
 
+/* LOGO IRCI pour les titres (version fond clair avec points rouges) */
+.irci-logo-title {
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  color: var(--primary-dark);
+  letter-spacing: 1px;
+}
+
+/* Premier "I" avec point rouge EN HAUT - Titre */
+.irci-i-top-title {
+  position: relative;
+  display: inline-block;
+}
+
+.irci-i-top-title::before {
+  content: '';
+  position: absolute;
+  width: 0.4em;
+  height: 0.4em;
+  background-color: var(--primary-dark);
+  border-radius: 50%;
+  top: -0.2em;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.3);
+}
+
+/* Dernier "I" avec point rouge EN BAS - Titre */
+.irci-i-bottom-title {
+  position: relative;
+  display: inline-block;
+}
+
+.irci-i-bottom-title::after {
+  content: '';
+  position: absolute;
+  width: 0.4em;
+  height: 0.4em;
+  background-color: var(--primary-dark);
+  border-radius: 50%;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.3);
+}
+
+/* Variante plus petite pour les titres h3 */
+.irci-logo-title-small .irci-i-top-title::before {
+  width: 0.15em;
+  height: 0.15em;
+  top: -0.075em;
+}
+
+.irci-logo-title-small .irci-i-bottom-title::after {
+  width: 0.15em;
+  height: 0.15em;
+  bottom: -0.075em;
+}
+
+/* Variante blanche pour les titres sur fond sombre */
+.irci-logo-title-white {
+  color: var(--white) !important;
+}
+
+.irci-logo-title-white .irci-i-top-title::before {
+  width: 0.15em;
+  height: 0.15em;
+  top: -0.075em;
+  background-color: var(--white);
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.irci-logo-title-white .irci-i-bottom-title::after {
+  width: 0.15em;
+  height: 0.15em;
+  bottom: -0.075em;
+  background-color: var(--white);
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
 /* ===================================================
    ANIMATIONS SCROLL REVEAL
    =================================================== */
