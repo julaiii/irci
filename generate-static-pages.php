@@ -4,7 +4,7 @@
  * À exécuter avec : php generate-static-pages.php
  */
 
-$baseUrl = 'https://pma.localhost:8000'; // Changer si nécessaire
+$baseUrl = 'https://127.0.0.1:8000'; // Changer si nécessaire
 $outputDir = __DIR__ . '/deploy-static';
 
 // Créer le dossier de sortie s'il n'existe pas
@@ -20,16 +20,36 @@ $pages = [
     'a-propos.html' => '/a-propos',
     'galerie.html' => '/galerie',
     'contact.html' => '/contact',
+    'mentions-legales.html' => '/mentions-legales',
 ];
 
-// Pages produits
+// Pages produits (liste complète depuis RentalController)
 $products = [
-    'console-yamaha-dm3',
-    'enceinte-l-acoustics-x12',
-    'projecteur-led-martin-mac-aura',
-    'lyre-robe-robin-600',
-    'ecran-led-absen-a3pro',
-    'machine-fumee-antari-z1520',
+    'midas-m32r-live',
+    'jbl-eon-610-710',
+    'jbl-control-25',
+    'behringer-mpa-200bt',
+    'behringer-xenyx-x1204',
+    'soundcraft-efx12',
+    'soundcraft-m8',
+    'micros-shure-analogique',
+    'pack-micros-shure-numeriques',
+    'micro-serre-tete-shure-sm35',
+    'micro-cravate-shure-cvl',
+    'rack-son-cle-en-main',
+    'eurolite-pfe60',
+    'eurolite-bar-12-qcl',
+    'stairville-ddc-12-lcd-dmx',
+    'televisions-samsung',
+    'videoprojecteur-courte-focale',
+    'videoprojecteur-haute-resolution',
+    'videoprojecteur-longue-distance',
+    'tablettes-tactiles',
+    'ordinateurs-portables',
+    'lecteur-cs-4070',
+    'pda-zebra-tc21',
+    'imprimante-multifonction-laser-hp',
+    'imprimante-laser-noir-blanc',
 ];
 
 echo "🚀 Génération des pages HTML statiques...\n\n";
@@ -58,8 +78,10 @@ foreach ($pages as $filename => $route) {
     // Adapter les chemins des assets pour le déploiement statique
     $html = str_replace('/build/', './build/', $html);
     $html = str_replace('/images/', './images/', $html);
+    $html = str_replace('/IRCI/', './IRCI/', $html);
     $html = str_replace('href="/', 'href="./', $html);
     $html = str_replace("href='/", "href='./", $html);
+    $html = str_replace('src="/IRCI/', 'src="./IRCI/', $html);
     
     // Sauvegarder le fichier
     file_put_contents($outputDir . '/' . $filename, $html);
@@ -86,8 +108,10 @@ foreach ($products as $productSlug) {
     // Adapter les chemins (un niveau de plus pour les sous-pages)
     $html = str_replace('/build/', '../build/', $html);
     $html = str_replace('/images/', '../images/', $html);
+    $html = str_replace('/IRCI/', '../IRCI/', $html);
     $html = str_replace('href="/', 'href="../', $html);
     $html = str_replace("href='/", "href='../", $html);
+    $html = str_replace('src="/IRCI/', 'src="../IRCI/', $html);
     
     file_put_contents($outputDir . '/' . $filename, $html);
     echo " ✅\n";
