@@ -78,8 +78,11 @@
                             <div class="product-image">
                                 <img src="{{ asset(product.image) }}" 
                                      alt="{{ product.name }}" 
-                                     class="img-fluid"
-                                     onerror="this.src='{{ asset('images/placeholder.jpg') }}'">
+                                     class="img-fluid product-img"
+                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="product-image-placeholder" style="display: none;">
+                                    <i class="fas fa-image fa-4x text-muted"></i>
+                                </div>
                                 <span class="product-badge {% if categorySlug == 'lumiere' %}badge-light{% elseif categorySlug == 'multimedia' %}badge-video{% elseif categorySlug == 'controle-acces' %}badge-effects{% endif %}">{{ product.category }}</span>
                             </div>
                             <div class="product-body">
@@ -135,6 +138,7 @@
     position: relative;
     overflow: hidden;
     aspect-ratio: 4/3;
+    background-color: #f8f9fa;
 }
 
 .product-image img {
@@ -142,6 +146,18 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+}
+
+.product-image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
 }
 
 .product-card:hover .product-image img {
