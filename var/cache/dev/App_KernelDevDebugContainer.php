@@ -16,6 +16,6 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerJThmeWZ\App_KernelDevDebugContainer([
     'container.build_hash' => 'JThmeWZ',
-    'container.build_id' => '78c49d07',
-    'container.build_time' => 1769559407,
+    'container.build_id' => '36754bf2',
+    'container.build_time' => 1769730996,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerJThmeWZ');
