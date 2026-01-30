@@ -1,0 +1,960 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* gallery/index.html.twig */
+class __TwigTemplate_9b0627bb25404cb5d47ec4f73af4ae943a5c1082652850571d2a1d4c3d65adfa extends Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'meta_description' => [$this, 'block_meta_description'],
+            'body' => [$this, 'block_body'],
+        ];
+    }
+
+    protected function doGetParent(array $context)
+    {
+        // line 1
+        return "base.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "gallery/index.html.twig"));
+
+        $this->parent = $this->loadTemplate("base.html.twig", "gallery/index.html.twig", 1);
+        yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+    }
+
+    // line 3
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["page_title"]) || array_key_exists("page_title", $context) ? $context["page_title"] : (function () { throw new RuntimeError('Variable "page_title" does not exist.', 3, $this->source); })()), "html", null, true);
+        yield " - IRCI";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        return; yield '';
+    }
+
+    // line 5
+    public function block_meta_description($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "meta_description"));
+
+        yield "Découvrez nos réalisations : installations audiovisuelles, salons professionnels, événements corporate. Galerie photos de nos prestations événementielles.";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        return; yield '';
+    }
+
+    // line 7
+    public function block_body($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        // line 9
+        yield "<section class=\"bg-primary-dark text-white py-5 position-relative\">
+    <div class=\"container py-5\">
+        <div class=\"row align-items-center\">
+            <div class=\"col-lg-8 mx-auto text-center fade-in-up\">
+                <h1 class=\"display-4 font-bold mb-3\">
+                    <i class=\"fas fa-images text-primary-red me-3\"></i>
+                    Galerie de nos Réalisations
+                </h1>
+                <p class=\"lead\">Nos installations audiovisuelles et prestations événementielles en images</p>
+            </div>
+        </div>
+    </div>
+    
+    ";
+        // line 23
+        yield "    <div class=\"scroll-indicator\">
+        <a href=\"#intro\" class=\"scroll-arrow\">
+            <i class=\"fas fa-chevron-down\"></i>
+        </a>
+    </div>
+</section>
+
+";
+        // line 31
+        yield "<section id=\"intro\" class=\"pt-5 pb-3 bg-white\">
+    <div class=\"container\">
+        <div class=\"row\">
+            <div class=\"col-lg-10 mx-auto scroll-reveal\">
+                <div class=\"text-center mb-3\">
+                    <h2 class=\"h3 font-bold text-primary-dark mb-4\">
+                        <i class=\"fas fa-award text-primary-red me-2\"></i>
+                        Nos Prestations en Images
+                    </h2>
+                    <p class=\"lead text-dark-gray mb-4\">
+                        Découvrez quelques-unes de nos réalisations récentes : installations son et lumière, 
+                        équipements audiovisuels, scénographies complètes pour salons professionnels et événements corporate.
+                    </p>
+                    <p class=\"text-dark-gray fs-5\">
+                        De l'installation technique à la mise en lumière, en passant par la sonorisation et la vidéo, 
+                        <strong class=\"text-primary-red\">IRCI</strong> met son expertise au service de vos événements 
+                        pour créer des expériences mémorables.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+";
+        // line 56
+        yield "<section class=\"pt-4 pb-5 bg-light-bg\">
+    <div class=\"container py-4\">
+        <div class=\"row mb-5\">
+            <div class=\"col-lg-10 mx-auto scroll-reveal\">
+                <div class=\"event-header\">
+                    <span class=\"event-badge\">
+                        <i class=\"fas fa-calendar-alt me-2\"></i>Février 2026
+                    </span>
+                    <h2 class=\"h2 font-bold text-primary-dark mb-3\">Salon du CSE - Aix-en-Provence</h2>
+                    <p class=\"lead text-dark-gray mb-3\">
+                        Installation complète son, lumière et vidéo pour le salon des Comités Sociaux et Économiques
+                    </p>
+                    <div class=\"event-details\">
+                        <span class=\"detail-item\"><i class=\"fas fa-map-marker-alt text-primary-red me-2\"></i>Parc des Expositions, Aix-en-Provence</span>
+                        <span class=\"detail-item\"><i class=\"fas fa-users text-primary-red me-2\"></i>5 000+ visiteurs</span>
+                        <span class=\"detail-item\"><i class=\"fas fa-clock text-primary-red me-2\"></i>3 jours</span>
+                    </div>
+                    <p class=\"text-dark-gray mt-3\">
+                        Prestation technique complète pour ce salon professionnel réunissant plus de 200 exposants : 
+                        sonorisation de 4 espaces conférences, éclairage LED sur l'ensemble du hall, 
+                        écrans géants pour la retransmission en direct, et régie centrale de contrôle. 
+                        Notre équipe a assuré l'installation, la maintenance et le démontage sur 3 jours d'événement.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class=\"row g-4\">
+            ";
+        // line 85
+        yield "            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop\" 
+                         alt=\"Installation sonorisation salon CSE\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Système de sonorisation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.1s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop\" 
+                         alt=\"Éclairage LED salon professionnel\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Éclairage LED</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.2s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&h=600&fit=crop\" 
+                         alt=\"Écrans géants événement\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Écrans géants</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.3s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop\" 
+                         alt=\"Régie technique événement\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Régie technique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            ";
+        // line 142
+        yield "            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.4s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&h=600&fit=crop\" 
+                         alt=\"Vue d'ensemble salon professionnel\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Vue d'ensemble</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.5s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop\" 
+                         alt=\"Espace conférence équipé\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Espace conférence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.6s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&h=600&fit=crop\" 
+                         alt=\"Installation lumière scène\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Lumière scénique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.7s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1464047736614-af63643285bf?w=800&h=600&fit=crop\" 
+                         alt=\"Public salon professionnel\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Affluence salon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+";
+        // line 202
+        yield "<section class=\"py-5 bg-white\">
+    <div class=\"container py-4\">
+        <div class=\"row mb-5\">
+            <div class=\"col-lg-10 mx-auto scroll-reveal\">
+                <div class=\"event-header\">
+                    <span class=\"event-badge\">
+                        <i class=\"fas fa-calendar-alt me-2\"></i>Janvier 2026
+                    </span>
+                    <h2 class=\"h2 font-bold text-primary-dark mb-3\">Salon du Tourisme - Marseille</h2>
+                    <p class=\"lead text-dark-gray mb-3\">
+                        Prestation audiovisuelle complète pour le salon international du tourisme
+                    </p>
+                    <div class=\"event-details\">
+                        <span class=\"detail-item\"><i class=\"fas fa-map-marker-alt text-primary-red me-2\"></i>Palais des Congrès, Marseille</span>
+                        <span class=\"detail-item\"><i class=\"fas fa-users text-primary-red me-2\"></i>8 000+ visiteurs</span>
+                        <span class=\"detail-item\"><i class=\"fas fa-clock text-primary-red me-2\"></i>4 jours</span>
+                    </div>
+                    <p class=\"text-dark-gray mt-3\">
+                        Installation technique haut de gamme pour ce salon international : sonorisation multi-zones, 
+                        mapping vidéo sur structures 3D, éclairage architectural dynamique et réseau de distribution vidéo. 
+                        Plus de 150 exposants ont bénéficié de notre expertise technique pour mettre en valeur leurs destinations. 
+                        Notre équipe a coordonné l'ensemble des installations avec une disponibilité 24/7 pendant toute la durée de l'événement.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class=\"row g-4\">
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop&sat=-100\" 
+                         alt=\"Hall principal salon tourisme\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Hall principal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.1s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=800&h=600&fit=crop\" 
+                         alt=\"Mapping vidéo salon\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Mapping vidéo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.2s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1558008258-3256797b43f3?w=800&h=600&fit=crop\" 
+                         alt=\"Stands exposants équipés\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Stands exposants</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.3s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1496024840928-4c417adf211d?w=800&h=600&fit=crop\" 
+                         alt=\"Éclairage architectural dynamique\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Éclairage architectural</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+";
+        // line 290
+        yield "<section class=\"py-5 bg-primary-red text-white\">
+    <div class=\"container py-4 text-center scroll-reveal\">
+        <h2 class=\"h3 font-bold mb-3\">Votre projet mérite notre expertise</h2>
+        <p class=\"lead mb-4\">Discutons de vos besoins techniques pour votre prochain événement</p>
+        <div class=\"d-flex gap-3 justify-content-center flex-wrap\">
+            <a href=\"";
+        // line 295
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
+        yield "\" class=\"btn btn-light btn-lg\">
+                <i class=\"fas fa-envelope me-2\"></i>Nous contacter
+            </a>
+            <a href=\"";
+        // line 298
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("prestations");
+        yield "\" class=\"btn btn-outline-light btn-lg\">
+                <i class=\"fas fa-tools me-2\"></i>Nos prestations
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Event Header Styles */
+.event-header {
+    padding: 30px;
+    background: #ffffff;
+    border-left: 4px solid var(--primary-red);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+
+.event-badge {
+    display: inline-block;
+    background: var(--primary-red);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.event-details {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.detail-item {
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+/* Gallery Styles */
+.gallery-item {
+    position: relative;
+}
+
+.gallery-photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    aspect-ratio: 4/3;
+}
+
+.gallery-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: brightness(1) saturate(1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(220, 20, 60, 0.85), rgba(44, 62, 80, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.overlay-content {
+    color: white;
+    text-align: center;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.overlay-content p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Hover Effects */
+.gallery-photo:hover img {
+    transform: scale(1.15);
+    filter: brightness(0.8) saturate(1.2);
+}
+
+.gallery-photo:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-photo:hover .overlay-content {
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .event-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .event-header {
+        padding: 20px;
+    }
+}
+</style>
+";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        return; yield '';
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName()
+    {
+        return "gallery/index.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo()
+    {
+        return array (  392 => 298,  386 => 295,  379 => 290,  290 => 202,  229 => 142,  171 => 85,  141 => 56,  115 => 31,  106 => 23,  91 => 9,  84 => 7,  70 => 5,  55 => 3,  38 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("{% extends 'base.html.twig' %}
+
+{% block title %}{{ page_title }} - IRCI{% endblock %}
+
+{% block meta_description %}Découvrez nos réalisations : installations audiovisuelles, salons professionnels, événements corporate. Galerie photos de nos prestations événementielles.{% endblock %}
+
+{% block body %}
+{# Hero Section #}
+<section class=\"bg-primary-dark text-white py-5 position-relative\">
+    <div class=\"container py-5\">
+        <div class=\"row align-items-center\">
+            <div class=\"col-lg-8 mx-auto text-center fade-in-up\">
+                <h1 class=\"display-4 font-bold mb-3\">
+                    <i class=\"fas fa-images text-primary-red me-3\"></i>
+                    Galerie de nos Réalisations
+                </h1>
+                <p class=\"lead\">Nos installations audiovisuelles et prestations événementielles en images</p>
+            </div>
+        </div>
+    </div>
+    
+    {# Flèche animée #}
+    <div class=\"scroll-indicator\">
+        <a href=\"#intro\" class=\"scroll-arrow\">
+            <i class=\"fas fa-chevron-down\"></i>
+        </a>
+    </div>
+</section>
+
+{# Section Introduction #}
+<section id=\"intro\" class=\"pt-5 pb-3 bg-white\">
+    <div class=\"container\">
+        <div class=\"row\">
+            <div class=\"col-lg-10 mx-auto scroll-reveal\">
+                <div class=\"text-center mb-3\">
+                    <h2 class=\"h3 font-bold text-primary-dark mb-4\">
+                        <i class=\"fas fa-award text-primary-red me-2\"></i>
+                        Nos Prestations en Images
+                    </h2>
+                    <p class=\"lead text-dark-gray mb-4\">
+                        Découvrez quelques-unes de nos réalisations récentes : installations son et lumière, 
+                        équipements audiovisuels, scénographies complètes pour salons professionnels et événements corporate.
+                    </p>
+                    <p class=\"text-dark-gray fs-5\">
+                        De l'installation technique à la mise en lumière, en passant par la sonorisation et la vidéo, 
+                        <strong class=\"text-primary-red\">IRCI</strong> met son expertise au service de vos événements 
+                        pour créer des expériences mémorables.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Salon 1 : CSE Aix-en-Provence #}
+<section class=\"pt-4 pb-5 bg-light-bg\">
+    <div class=\"container py-4\">
+        <div class=\"row mb-5\">
+            <div class=\"col-lg-10 mx-auto scroll-reveal\">
+                <div class=\"event-header\">
+                    <span class=\"event-badge\">
+                        <i class=\"fas fa-calendar-alt me-2\"></i>Février 2026
+                    </span>
+                    <h2 class=\"h2 font-bold text-primary-dark mb-3\">Salon du CSE - Aix-en-Provence</h2>
+                    <p class=\"lead text-dark-gray mb-3\">
+                        Installation complète son, lumière et vidéo pour le salon des Comités Sociaux et Économiques
+                    </p>
+                    <div class=\"event-details\">
+                        <span class=\"detail-item\"><i class=\"fas fa-map-marker-alt text-primary-red me-2\"></i>Parc des Expositions, Aix-en-Provence</span>
+                        <span class=\"detail-item\"><i class=\"fas fa-users text-primary-red me-2\"></i>5 000+ visiteurs</span>
+                        <span class=\"detail-item\"><i class=\"fas fa-clock text-primary-red me-2\"></i>3 jours</span>
+                    </div>
+                    <p class=\"text-dark-gray mt-3\">
+                        Prestation technique complète pour ce salon professionnel réunissant plus de 200 exposants : 
+                        sonorisation de 4 espaces conférences, éclairage LED sur l'ensemble du hall, 
+                        écrans géants pour la retransmission en direct, et régie centrale de contrôle. 
+                        Notre équipe a assuré l'installation, la maintenance et le démontage sur 3 jours d'événement.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class=\"row g-4\">
+            {# Ligne 1 - 4 photos #}
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop\" 
+                         alt=\"Installation sonorisation salon CSE\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Système de sonorisation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.1s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop\" 
+                         alt=\"Éclairage LED salon professionnel\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Éclairage LED</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.2s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&h=600&fit=crop\" 
+                         alt=\"Écrans géants événement\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Écrans géants</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.3s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop\" 
+                         alt=\"Régie technique événement\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Régie technique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {# Ligne 2 - 4 photos #}
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.4s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&h=600&fit=crop\" 
+                         alt=\"Vue d'ensemble salon professionnel\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Vue d'ensemble</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.5s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop\" 
+                         alt=\"Espace conférence équipé\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Espace conférence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.6s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&h=600&fit=crop\" 
+                         alt=\"Installation lumière scène\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Lumière scénique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.7s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1464047736614-af63643285bf?w=800&h=600&fit=crop\" 
+                         alt=\"Public salon professionnel\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Affluence salon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Salon 2 : Salon du Tourisme #}
+<section class=\"py-5 bg-white\">
+    <div class=\"container py-4\">
+        <div class=\"row mb-5\">
+            <div class=\"col-lg-10 mx-auto scroll-reveal\">
+                <div class=\"event-header\">
+                    <span class=\"event-badge\">
+                        <i class=\"fas fa-calendar-alt me-2\"></i>Janvier 2026
+                    </span>
+                    <h2 class=\"h2 font-bold text-primary-dark mb-3\">Salon du Tourisme - Marseille</h2>
+                    <p class=\"lead text-dark-gray mb-3\">
+                        Prestation audiovisuelle complète pour le salon international du tourisme
+                    </p>
+                    <div class=\"event-details\">
+                        <span class=\"detail-item\"><i class=\"fas fa-map-marker-alt text-primary-red me-2\"></i>Palais des Congrès, Marseille</span>
+                        <span class=\"detail-item\"><i class=\"fas fa-users text-primary-red me-2\"></i>8 000+ visiteurs</span>
+                        <span class=\"detail-item\"><i class=\"fas fa-clock text-primary-red me-2\"></i>4 jours</span>
+                    </div>
+                    <p class=\"text-dark-gray mt-3\">
+                        Installation technique haut de gamme pour ce salon international : sonorisation multi-zones, 
+                        mapping vidéo sur structures 3D, éclairage architectural dynamique et réseau de distribution vidéo. 
+                        Plus de 150 exposants ont bénéficié de notre expertise technique pour mettre en valeur leurs destinations. 
+                        Notre équipe a coordonné l'ensemble des installations avec une disponibilité 24/7 pendant toute la durée de l'événement.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class=\"row g-4\">
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop&sat=-100\" 
+                         alt=\"Hall principal salon tourisme\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Hall principal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.1s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=800&h=600&fit=crop\" 
+                         alt=\"Mapping vidéo salon\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Mapping vidéo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.2s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1558008258-3256797b43f3?w=800&h=600&fit=crop\" 
+                         alt=\"Stands exposants équipés\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Stands exposants</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=\"col-md-6 col-lg-3 gallery-item scroll-reveal-card\" style=\"animation-delay: 0.3s;\">
+                <div class=\"gallery-photo\">
+                    <img src=\"https://images.unsplash.com/photo-1496024840928-4c417adf211d?w=800&h=600&fit=crop\" 
+                         alt=\"Éclairage architectural dynamique\" 
+                         class=\"img-fluid\">
+                    <div class=\"gallery-overlay\">
+                        <div class=\"overlay-content\">
+                            <i class=\"fas fa-search-plus fa-2x mb-2\"></i>
+                            <p class=\"mb-0\">Éclairage architectural</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# CTA Section #}
+<section class=\"py-5 bg-primary-red text-white\">
+    <div class=\"container py-4 text-center scroll-reveal\">
+        <h2 class=\"h3 font-bold mb-3\">Votre projet mérite notre expertise</h2>
+        <p class=\"lead mb-4\">Discutons de vos besoins techniques pour votre prochain événement</p>
+        <div class=\"d-flex gap-3 justify-content-center flex-wrap\">
+            <a href=\"{{ path('contact') }}\" class=\"btn btn-light btn-lg\">
+                <i class=\"fas fa-envelope me-2\"></i>Nous contacter
+            </a>
+            <a href=\"{{ path('prestations') }}\" class=\"btn btn-outline-light btn-lg\">
+                <i class=\"fas fa-tools me-2\"></i>Nos prestations
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Event Header Styles */
+.event-header {
+    padding: 30px;
+    background: #ffffff;
+    border-left: 4px solid var(--primary-red);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+
+.event-badge {
+    display: inline-block;
+    background: var(--primary-red);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.event-details {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.detail-item {
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+/* Gallery Styles */
+.gallery-item {
+    position: relative;
+}
+
+.gallery-photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    aspect-ratio: 4/3;
+}
+
+.gallery-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: brightness(1) saturate(1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(220, 20, 60, 0.85), rgba(44, 62, 80, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.overlay-content {
+    color: white;
+    text-align: center;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.overlay-content p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Hover Effects */
+.gallery-photo:hover img {
+    transform: scale(1.15);
+    filter: brightness(0.8) saturate(1.2);
+}
+
+.gallery-photo:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-photo:hover .overlay-content {
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .event-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .event-header {
+        padding: 20px;
+    }
+}
+</style>
+{% endblock %}
+", "gallery/index.html.twig", "/home/vagrant/public_html/irci/templates/gallery/index.html.twig");
+    }
+}
